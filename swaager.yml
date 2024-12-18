@@ -18,7 +18,7 @@ paths:
               schema:
                 type: array
                 items:
-                  $ref: '#/components/schemas/TransactionDTOFull'
+                  $ref: '#/components/schemas/Transaction'
         '404':
           $ref: '#/components/responses/NotFoundError'
         '500':
@@ -34,7 +34,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/TransactionDTO'
+              $ref: '#/components/schemas/Transfer'
       responses:
         '202':
           description: Transfer transaction accepted
@@ -51,7 +51,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/TransactionDTODepositWithdraws'
+              $ref: '#/components/schemas/Deposit'
       responses:
         '202':
           description: Deposit transaction accepted
@@ -68,7 +68,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/TransactionDTODepositWithdraws'
+              $ref: '#/components/schemas/Withdraws'
       responses:
         '202':
           description: Withdrawal transaction accepted
@@ -85,7 +85,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/WalletDTO'
+              $ref: '#/components/schemas/Wallet'
       responses:
         '201':
           description: Wallet created successfully
@@ -113,7 +113,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/BalanceDTO'
+                $ref: '#/components/schemas/Balance'
         '404':
           $ref: '#/components/responses/NotFoundError'
         '500':
@@ -121,13 +121,13 @@ paths:
 
 components:
   schemas:
-    TransactionDTODepositWithdraws:
+    Withdraws:
       type: object
       properties:
         amount:
           type: number
           format: decimal
-    TransactionDTO:
+    Deposit:
       type: object
       properties:
         amount:
@@ -136,7 +136,16 @@ components:
         relatedWalletId:
           type: string
           format: uuid
-    TransactionDTOFull:
+    Transfer:
+      type: object
+      properties:
+        amount:
+          type: number
+          format: decimal
+        relatedWalletId:
+          type: string
+          format: uuid
+    Transaction:
       type: object
       properties:
         amount:
@@ -156,14 +165,14 @@ components:
         currency:
           type: string
           description: Wallet currency (e.g., USD, EUR)
-    WalletDTO:
+    Wallet:
       type: object
       properties:
         userId:
           type: string
           
 
-    BalanceDTO:
+    Balance:
       type: object
       properties:
         idWallet:
