@@ -44,7 +44,15 @@ The architecture is event-driven, where transactions are processed asynchronousl
    WORKER_IMAGE_NAME=worker-wallet
    WORKER_IMAGE_VERSION=latest`` 
 
-2.  **Starting the Project**: Run the following command in the project root:
+2. Hosts Settings
+
+192.168.1.73 keycloak
+192.168.1.73 grafana
+192.168.1.73 loki
+
+192.168.1.73 is the docker ip
+
+4.  **Starting the Project**: Run the following command in the project root:
     
    
     `./build-and-run.sh` 
@@ -83,9 +91,6 @@ The swagger file is in the root project: swaager.yml
 
 ### Transaction
 
-json
-
-Copiar código
 
 `{
   "namespace": "com.recargapay.code.assessment.topics",
@@ -101,10 +106,6 @@ Copiar código
 }` 
 
 ### Notification
-
-json
-
-Copiar código
 
 `{
   "type": "record",
@@ -141,7 +142,7 @@ Scripts for schema creation and data population:
 
 ### Information
 
--   **Admin Console**: `http://localhost:8080/admin`
+-   **Admin Console**: `http://keycloak:8080/admin`
 -   **Admin User**: admin
 -   **Password**: admin
 
@@ -152,11 +153,11 @@ Scripts for schema creation and data population:
 -   pass: teste
 ----------
 
-## Logs and Monitoring
+## Audit Logs and Monitoring
 
 ### Grafana
 
--   URL: `http://localhost:3000`
+-   URL: `http://grafana:3000`
 -   Application metrics monitoring.
 - user: admin
 - pass: admin
@@ -164,3 +165,4 @@ Scripts for schema creation and data population:
 ### Loki
 
 -   Integrated with Grafana for log management.
+- Add Datasource in Grafana's interface: http://loki:3100
