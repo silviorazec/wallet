@@ -4533,3 +4533,1826 @@ Caused by: org.postgresql.util.PSQLException: ERROR: new row for relation "trans
 2024-12-18T09:43:11.795-03:00  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-worker-wallet-consumer-1, groupId=worker-wallet-consumer] Node -1 disconnected.
 2024-12-18T09:50:45.862-03:00  INFO 1 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
 2024-12-18T10:00:45.882-03:00  INFO 1 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2024-12-18T10:29:33.959-03:00  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] k.c.c.i.ConsumerRebalanceListenerInvoker : [Consumer clientId=consumer-worker-wallet-consumer-1, groupId=worker-wallet-consumer] Revoke previously assigned partitions transaction-0
+2024-12-18T10:29:33.963-03:00  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : worker-wallet-consumer: partitions revoked: [transaction-0]
+2024-12-18T10:29:33.965-03:00  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-worker-wallet-consumer-1, groupId=worker-wallet-consumer] Member consumer-worker-wallet-consumer-1-7df2781c-59c4-47a5-b649-875dd375bfcf sending LeaveGroup request to coordinator kafka:9092 (id: 2147483647 rack: null) due to the consumer unsubscribed from all topics
+2024-12-18T10:29:33.967-03:00  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-worker-wallet-consumer-1, groupId=worker-wallet-consumer] Resetting generation and member id due to: consumer pro-actively leaving the group
+2024-12-18T10:29:33.967-03:00  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-worker-wallet-consumer-1, groupId=worker-wallet-consumer] Request joining group due to: consumer pro-actively leaving the group
+2024-12-18T10:29:33.968-03:00  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.LegacyKafkaConsumer  : [Consumer clientId=consumer-worker-wallet-consumer-1, groupId=worker-wallet-consumer] Unsubscribed all topics or patterns and assigned partitions
+2024-12-18T10:29:33.976-03:00  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-worker-wallet-consumer-1, groupId=worker-wallet-consumer] Resetting generation and member id due to: consumer pro-actively leaving the group
+2024-12-18T10:29:33.977-03:00  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-worker-wallet-consumer-1, groupId=worker-wallet-consumer] Request joining group due to: consumer pro-actively leaving the group
+2024-12-18T10:29:34.371-03:00  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.apache.kafka.common.metrics.Metrics    : Metrics scheduler closed
+2024-12-18T10:29:34.372-03:00  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2024-12-18T10:29:34.372-03:00  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.telemetry.internals.ClientTelemetryReporter
+2024-12-18T10:29:34.373-03:00  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.apache.kafka.common.metrics.Metrics    : Metrics reporters closed
+2024-12-18T10:29:34.379-03:00  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.kafka.common.utils.AppInfoParser     : App info kafka.consumer for consumer-worker-wallet-consumer-1 unregistered
+2024-12-18T10:29:34.380-03:00  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : worker-wallet-consumer: Consumer stopped
+2024-12-18T10:29:34.386-03:00  INFO 1 --- [SpringApplicationShutdownHook] o.s.b.w.embedded.netty.GracefulShutdown  : Commencing graceful shutdown. Waiting for active requests to complete
+2024-12-18T10:29:34.398-03:00  INFO 1 --- [netty-shutdown] o.s.b.w.embedded.netty.GracefulShutdown  : Graceful shutdown complete
+2024-12-18T10:29:36.430-03:00  INFO 1 --- [SpringApplicationShutdownHook] o.a.k.clients.producer.KafkaProducer     : [Producer clientId=producer-1] Closing the Kafka producer with timeoutMillis = 30000 ms.
+2024-12-18T10:29:36.434-03:00  INFO 1 --- [SpringApplicationShutdownHook] o.apache.kafka.common.metrics.Metrics    : Metrics scheduler closed
+2024-12-18T10:29:36.434-03:00  INFO 1 --- [SpringApplicationShutdownHook] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2024-12-18T10:29:36.434-03:00  INFO 1 --- [SpringApplicationShutdownHook] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.telemetry.internals.ClientTelemetryReporter
+2024-12-18T10:29:36.435-03:00  INFO 1 --- [SpringApplicationShutdownHook] o.apache.kafka.common.metrics.Metrics    : Metrics reporters closed
+2024-12-18T10:29:36.436-03:00  INFO 1 --- [SpringApplicationShutdownHook] o.a.kafka.common.utils.AppInfoParser     : App info kafka.producer for producer-1 unregistered
+2024-12-18T10:29:36.439-03:00  INFO 1 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-18T10:29:36.444-03:00  INFO 1 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-12-18T10:29:36.447-03:00  INFO 1 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-12-18T10:35:13.172-03:00  INFO 1 --- [main] c.r.c.a.WorkerWalletApplication          : Starting WorkerWalletApplication using Java 17-ea with PID 1 (/opt/app.jar started by root in /opt)
+2024-12-18T10:35:13.178-03:00  INFO 1 --- [main] c.r.c.a.WorkerWalletApplication          : No active profile set, falling back to 1 default profile: "default"
+2024-12-18T10:35:14.135-03:00  INFO 1 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-18T10:35:14.303-03:00  INFO 1 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 151 ms. Found 2 JPA repository interfaces.
+2024-12-18T10:35:15.488-03:00  INFO 1 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-18T10:35:15.662-03:00  INFO 1 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.2.Final
+2024-12-18T10:35:15.757-03:00  INFO 1 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-12-18T10:35:16.320-03:00  INFO 1 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-18T10:35:16.370-03:00  INFO 1 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-12-18T10:35:16.677-03:00  INFO 1 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3d88ce0e
+2024-12-18T10:35:16.682-03:00  INFO 1 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-12-18T10:35:16.742-03:00  WARN 1 --- [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-12-18T10:35:16.791-03:00  INFO 1 --- [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2024-12-18T10:35:18.006-03:00  INFO 1 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-18T10:35:18.059-03:00  INFO 1 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-18T10:35:18.951-03:00  INFO 1 --- [main] c.r.code.assessment.config.JWKConf       : CHAVE PUBLICA: 
+ {"keys":[{"kid":"BI1z83qHwxRpIS_21_gOHlsSl4qDCtTqReZ3IyPbL1A","kty":"RSA","alg":"RS256","use":"sig","n":"ji_NqXp_V3kGIxy_-OWdLQTYku90R2wRnErvcvYKCwS8xYkdB9A_3t4_DmZ48x6hkTdb297NIm28unsBTIYprOW4iio_qxvvx5FiwdyLtceSkWVyb66qZQI5bxvloR7CZoJOPhnDRcM0YQR36dQ8qQECrJCzvPFUPWCwOocAsA1CVDsigerWQrYnrsjXdPk5VMOcTgb8JV_p2bQ3cgl-G3DYuCTtUwOOMddsnJkeFE9DRL_eh62IEYBCxTtsVp8ZuDsh7JcJsFU20FDbF9juWUiQ7824IvYh6fHEMHgyAyNUaBg5joNQ9fxaB-E3wc0pKxVieGXq0KlLQCUmYyj_vw","e":"AQAB","x5c":["MIICuzCCAaMCBgGT2frFJzANBgkqhkiG9w0BAQsFADAhMR8wHQYDVQQDDBZyZWNhcmdhcGF5X3dhbGxldF90ZXN0MB4XDTI0MTIxODEzMzMzMFoXDTM0MTIxODEzMzUxMFowITEfMB0GA1UEAwwWcmVjYXJnYXBheV93YWxsZXRfdGVzdDCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAI4vzal6f1d5BiMcv/jlnS0E2JLvdEdsEZxK73L2CgsEvMWJHQfQP97ePw5mePMeoZE3W9vezSJtvLp7AUyGKazluIoqP6sb78eRYsHci7XHkpFlcm+uqmUCOW8b5aEewmaCTj4Zw0XDNGEEd+nUPKkBAqyQs7zxVD1gsDqHALANQlQ7IoHq1kK2J67I13T5OVTDnE4G/CVf6dm0N3IJfhtw2Lgk7VMDjjHXbJyZHhRPQ0S/3oetiBGAQsU7bFafGbg7IeyXCbBVNtBQ2xfY7llIkO/NuCL2IenxxDB4MgMjVGgYOY6DUPX8WgfhN8HNKSsVYnhl6tCpS0AlJmMo/78CAwEAATANBgkqhkiG9w0BAQsFAAOCAQEAI0Zfd7YuFLYKZ3CeDBdR9iXg48LAgTYg1sV9WQ2OljGI0IzMAoqv3aSycFjVUzuYvZjxICmWiE0kDKOx4mtgJxAosbmmko6LRGiqtY7G5d01HreqlwYBFOt+p/7igeork3raE9efBoNe2Z4rx4xEXeWq84H9urZfg4uJPyaHeUR0yWyADOmiWGTORp5xZYvhF6hJEekXb/6bl5S4K4RDv4yZ70EJoJhPC4pP3v46IUzy1Pmz/iURyHUthCyZ2tYT+QHLf2ntq8fg1nsBn0V71qNjhU+Azuh/oMIRxxOkIstVWan5S/82g8MRh3U+Pc+2IileThMtklzwLPkhBuMWKg=="],"x5t":"QqHxHt--fo14t82yDObhbiKgbPo","x5t#S256":"oWYSynlm6XVa5Qer63loL4OAN6ZwVDSURp5FoQ3oXzY"},{"kid":"t2ZXX9ETQywsi_f_W78_-YOYR0Mc4JpDG6-fz6UuZH4","kty":"RSA","alg":"RSA-OAEP","use":"enc","n":"6n6_NWcoIajRb-1lJ8ZEiMLOD0oroNEwE3A8bG9eczmijQN2C2NZACJfa9mDvl1qQp2eqPn6bqYCpjSTBSX_cNScv-JRTnc3anWRgdGDGuGYqamm3OPPHo0NXKdhmToyo0EXdps3iLfVFRfJCFYqB101xwt1OiQrAcX3-mj9U0Q7DYM7I4GCEyMBnZvZNJ02lXq_-4dTQ57oommDvIrt8GPUDrixN59gelQtlanWjBzKm8Qmsv8Ny_v1ITiiUUOHSIDAJnkyR4lRIgobWyflMCwRu1Mjzjb8veHhseRoVBtw_ikg75C3MYGgPLb9vP4DyNybkJ4zI-_9p_qNmFPHtQ","e":"AQAB","x5c":["MIICuzCCAaMCBgGT2frEOjANBgkqhkiG9w0BAQsFADAhMR8wHQYDVQQDDBZyZWNhcmdhcGF5X3dhbGxldF90ZXN0MB4XDTI0MTIxODEzMzMzMFoXDTM0MTIxODEzMzUxMFowITEfMB0GA1UEAwwWcmVjYXJnYXBheV93YWxsZXRfdGVzdDCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAOp+vzVnKCGo0W/tZSfGRIjCzg9KK6DRMBNwPGxvXnM5oo0DdgtjWQAiX2vZg75dakKdnqj5+m6mAqY0kwUl/3DUnL/iUU53N2p1kYHRgxrhmKmpptzjzx6NDVynYZk6MqNBF3abN4i31RUXyQhWKgddNccLdTokKwHF9/po/VNEOw2DOyOBghMjAZ2b2TSdNpV6v/uHU0Oe6KJpg7yK7fBj1A64sTefYHpULZWp1owcypvEJrL/Dcv79SE4olFDh0iAwCZ5MkeJUSIKG1sn5TAsEbtTI842/L3h4bHkaFQbcP4pIO+QtzGBoDy2/bz+A8jcm5CeMyPv/af6jZhTx7UCAwEAATANBgkqhkiG9w0BAQsFAAOCAQEA5Fdg/uNWBJHafZHmde4mMNUdNfnSaVYAQ1nW5Xv/5yv70zGTDJujyb0FBGD3t4jY5elUnnR/Y8kEBrTGUYL0X/B7pvRm8WkwljwwZZae42DjAi9QbhYxemflYunkUrWZzlzyvYPAWpBHOy2Jf5YPEUzRg+A2pNUfsQ7Dmf7I19nOrINv77Jp/R5TfSpGhrSQxZbcqy0+gunTwTXhl9KP4yU9mMUeFcd3/iWordXR9Tj9uoCkIl0wLFV1abR7lyl9JAVZkJNoqMJ0RkobOQqsVY6PN9YVbPLuzJxOGV+QgTLoxloT3R7dpa+TChwcEO375HzSeD3En/nI6r2R9/wPjA=="],"x5t":"r8vYM6nS7VQPnYTilzzLnAUSq90","x5t#S256":"MJup89lpWVFEapHUu1kKVGYCJlISDgzuPi12OiT7gZ0"}]}
+2024-12-18T10:35:19.528-03:00  INFO 1 --- [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-12-18T10:35:20.783-03:00  INFO 1 --- [main] c.r.c.assessment.audit.AuditLogAspect    : Audit Log - Iniciando execuÃ§Ã£o do mÃ©todo: String com.recargapay.code.assessment.JWKConfPort.jwkJsonPort(Builder)
+2024-12-18T10:35:20.785-03:00  INFO 1 --- [main] c.r.c.assessment.audit.AuditLogAspect    : ParÃ¢metros: org.springframework.web.reactive.function.client.DefaultWebClientBuilder@31e90355
+2024-12-18T10:35:20.805-03:00  INFO 1 --- [main] c.r.c.assessment.audit.AuditLogAspect    : Audit Log - MÃ©todo concluÃ­do: String com.recargapay.code.assessment.JWKConfPort.jwkJsonPort(Builder)
+2024-12-18T10:35:20.806-03:00  INFO 1 --- [main] c.r.c.assessment.audit.AuditLogAspect    : Resultado: {"keys":[{"kid":"BI1z83qHwxRpIS_21_gOHlsSl4qDCtTqReZ3IyPbL1A","kty":"RSA","alg":"RS256","use":"sig","n":"ji_NqXp_V3kGIxy_-OWdLQTYku90R2wRnErvcvYKCwS8xYkdB9A_3t4_DmZ48x6hkTdb297NIm28unsBTIYprOW4iio_qxvvx5FiwdyLtceSkWVyb66qZQI5bxvloR7CZoJOPhnDRcM0YQR36dQ8qQECrJCzvPFUPWCwOocAsA1CVDsigerWQrYnrsjXdPk5VMOcTgb8JV_p2bQ3cgl-G3DYuCTtUwOOMddsnJkeFE9DRL_eh62IEYBCxTtsVp8ZuDsh7JcJsFU20FDbF9juWUiQ7824IvYh6fHEMHgyAyNUaBg5joNQ9fxaB-E3wc0pKxVieGXq0KlLQCUmYyj_vw","e":"AQAB","x5c":["MIICuzCCAaMCBgGT2frFJzANBgkqhkiG9w0BAQsFADAhMR8wHQYDVQQDDBZyZWNhcmdhcGF5X3dhbGxldF90ZXN0MB4XDTI0MTIxODEzMzMzMFoXDTM0MTIxODEzMzUxMFowITEfMB0GA1UEAwwWcmVjYXJnYXBheV93YWxsZXRfdGVzdDCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAI4vzal6f1d5BiMcv/jlnS0E2JLvdEdsEZxK73L2CgsEvMWJHQfQP97ePw5mePMeoZE3W9vezSJtvLp7AUyGKazluIoqP6sb78eRYsHci7XHkpFlcm+uqmUCOW8b5aEewmaCTj4Zw0XDNGEEd+nUPKkBAqyQs7zxVD1gsDqHALANQlQ7IoHq1kK2J67I13T5OVTDnE4G/CVf6dm0N3IJfhtw2Lgk7VMDjjHXbJyZHhRPQ0S/3oetiBGAQsU7bFafGbg7IeyXCbBVNtBQ2xfY7llIkO/NuCL2IenxxDB4MgMjVGgYOY6DUPX8WgfhN8HNKSsVYnhl6tCpS0AlJmMo/78CAwEAATANBgkqhkiG9w0BAQsFAAOCAQEAI0Zfd7YuFLYKZ3CeDBdR9iXg48LAgTYg1sV9WQ2OljGI0IzMAoqv3aSycFjVUzuYvZjxICmWiE0kDKOx4mtgJxAosbmmko6LRGiqtY7G5d01HreqlwYBFOt+p/7igeork3raE9efBoNe2Z4rx4xEXeWq84H9urZfg4uJPyaHeUR0yWyADOmiWGTORp5xZYvhF6hJEekXb/6bl5S4K4RDv4yZ70EJoJhPC4pP3v46IUzy1Pmz/iURyHUthCyZ2tYT+QHLf2ntq8fg1nsBn0V71qNjhU+Azuh/oMIRxxOkIstVWan5S/82g8MRh3U+Pc+2IileThMtklzwLPkhBuMWKg=="],"x5t":"QqHxHt--fo14t82yDObhbiKgbPo","x5t#S256":"oWYSynlm6XVa5Qer63loL4OAN6ZwVDSURp5FoQ3oXzY"},{"kid":"t2ZXX9ETQywsi_f_W78_-YOYR0Mc4JpDG6-fz6UuZH4","kty":"RSA","alg":"RSA-OAEP","use":"enc","n":"6n6_NWcoIajRb-1lJ8ZEiMLOD0oroNEwE3A8bG9eczmijQN2C2NZACJfa9mDvl1qQp2eqPn6bqYCpjSTBSX_cNScv-JRTnc3anWRgdGDGuGYqamm3OPPHo0NXKdhmToyo0EXdps3iLfVFRfJCFYqB101xwt1OiQrAcX3-mj9U0Q7DYM7I4GCEyMBnZvZNJ02lXq_-4dTQ57oommDvIrt8GPUDrixN59gelQtlanWjBzKm8Qmsv8Ny_v1ITiiUUOHSIDAJnkyR4lRIgobWyflMCwRu1Mjzjb8veHhseRoVBtw_ikg75C3MYGgPLb9vP4DyNybkJ4zI-_9p_qNmFPHtQ","e":"AQAB","x5c":["MIICuzCCAaMCBgGT2frEOjANBgkqhkiG9w0BAQsFADAhMR8wHQYDVQQDDBZyZWNhcmdhcGF5X3dhbGxldF90ZXN0MB4XDTI0MTIxODEzMzMzMFoXDTM0MTIxODEzMzUxMFowITEfMB0GA1UEAwwWcmVjYXJnYXBheV93YWxsZXRfdGVzdDCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAOp+vzVnKCGo0W/tZSfGRIjCzg9KK6DRMBNwPGxvXnM5oo0DdgtjWQAiX2vZg75dakKdnqj5+m6mAqY0kwUl/3DUnL/iUU53N2p1kYHRgxrhmKmpptzjzx6NDVynYZk6MqNBF3abN4i31RUXyQhWKgddNccLdTokKwHF9/po/VNEOw2DOyOBghMjAZ2b2TSdNpV6v/uHU0Oe6KJpg7yK7fBj1A64sTefYHpULZWp1owcypvEJrL/Dcv79SE4olFDh0iAwCZ5MkeJUSIKG1sn5TAsEbtTI842/L3h4bHkaFQbcP4pIO+QtzGBoDy2/bz+A8jcm5CeMyPv/af6jZhTx7UCAwEAATANBgkqhkiG9w0BAQsFAAOCAQEA5Fdg/uNWBJHafZHmde4mMNUdNfnSaVYAQ1nW5Xv/5yv70zGTDJujyb0FBGD3t4jY5elUnnR/Y8kEBrTGUYL0X/B7pvRm8WkwljwwZZae42DjAi9QbhYxemflYunkUrWZzlzyvYPAWpBHOy2Jf5YPEUzRg+A2pNUfsQ7Dmf7I19nOrINv77Jp/R5TfSpGhrSQxZbcqy0+gunTwTXhl9KP4yU9mMUeFcd3/iWordXR9Tj9uoCkIl0wLFV1abR7lyl9JAVZkJNoqMJ0RkobOQqsVY6PN9YVbPLuzJxOGV+QgTLoxloT3R7dpa+TChwcEO375HzSeD3En/nI6r2R9/wPjA=="],"x5t":"r8vYM6nS7VQPnYTilzzLnAUSq90","x5t#S256":"MJup89lpWVFEapHUu1kKVGYCJlISDgzuPi12OiT7gZ0"}]}
+2024-12-18T10:35:22.053-03:00  INFO 1 --- [main] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port 8085 (http)
+2024-12-18T10:35:22.136-03:00  INFO 1 --- [main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 1000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = earliest
+	bootstrap.servers = [kafka:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-worker-wallet-consumer-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	enable.metrics.push = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = worker-wallet-consumer
+	group.instance.id = null
+	group.protocol = classic
+	group.remote.assignor = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class io.confluent.kafka.serializers.KafkaAvroDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metadata.recovery.strategy = none
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class io.confluent.kafka.serializers.KafkaAvroDeserializer
+
+2024-12-18T10:35:22.245-03:00  INFO 1 --- [main] o.a.k.c.t.i.KafkaMetricsCollector        : initializing Kafka metrics collector
+2024-12-18T10:35:22.409-03:00  INFO 1 --- [main] i.c.k.s.KafkaAvroDeserializerConfig      : KafkaAvroDeserializerConfig values: 
+	auto.register.schemas = true
+	avro.reflection.allow.null = false
+	avro.use.logical.type.converters = false
+	basic.auth.credentials.source = URL
+	basic.auth.user.info = [hidden]
+	bearer.auth.cache.expiry.buffer.seconds = 300
+	bearer.auth.client.id = null
+	bearer.auth.client.secret = null
+	bearer.auth.credentials.source = STATIC_TOKEN
+	bearer.auth.custom.provider.class = null
+	bearer.auth.identity.pool.id = null
+	bearer.auth.issuer.endpoint.url = null
+	bearer.auth.logical.cluster = null
+	bearer.auth.scope = null
+	bearer.auth.scope.claim.name = scope
+	bearer.auth.sub.claim.name = sub
+	bearer.auth.token = [hidden]
+	context.name.strategy = class io.confluent.kafka.serializers.context.NullContextNameStrategy
+	http.connect.timeout.ms = 60000
+	http.read.timeout.ms = 60000
+	id.compatibility.strict = true
+	key.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+	latest.cache.size = 1000
+	latest.cache.ttl.sec = -1
+	latest.compatibility.strict = true
+	max.schemas.per.subject = 1000
+	normalize.schemas = false
+	propagate.schema.tags = false
+	proxy.host = 
+	proxy.port = -1
+	rule.actions = []
+	rule.executors = []
+	rule.service.loader.enable = true
+	schema.format = null
+	schema.reflection = false
+	schema.registry.basic.auth.user.info = [hidden]
+	schema.registry.ssl.cipher.suites = null
+	schema.registry.ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	schema.registry.ssl.endpoint.identification.algorithm = https
+	schema.registry.ssl.engine.factory.class = null
+	schema.registry.ssl.key.password = null
+	schema.registry.ssl.keymanager.algorithm = SunX509
+	schema.registry.ssl.keystore.certificate.chain = null
+	schema.registry.ssl.keystore.key = null
+	schema.registry.ssl.keystore.location = null
+	schema.registry.ssl.keystore.password = null
+	schema.registry.ssl.keystore.type = JKS
+	schema.registry.ssl.protocol = TLSv1.3
+	schema.registry.ssl.provider = null
+	schema.registry.ssl.secure.random.implementation = null
+	schema.registry.ssl.trustmanager.algorithm = PKIX
+	schema.registry.ssl.truststore.certificates = null
+	schema.registry.ssl.truststore.location = null
+	schema.registry.ssl.truststore.password = null
+	schema.registry.ssl.truststore.type = JKS
+	schema.registry.url = [http://schema-registry:8081]
+	specific.avro.key.type = null
+	specific.avro.reader = true
+	specific.avro.value.type = null
+	use.latest.version = false
+	use.latest.with.metadata = null
+	use.schema.id = -1
+	value.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+
+2024-12-18T10:35:22.411-03:00  INFO 1 --- [main] i.c.k.s.KafkaAvroDeserializerConfig      : KafkaAvroDeserializerConfig values: 
+	auto.register.schemas = true
+	avro.reflection.allow.null = false
+	avro.use.logical.type.converters = false
+	basic.auth.credentials.source = URL
+	basic.auth.user.info = [hidden]
+	bearer.auth.cache.expiry.buffer.seconds = 300
+	bearer.auth.client.id = null
+	bearer.auth.client.secret = null
+	bearer.auth.credentials.source = STATIC_TOKEN
+	bearer.auth.custom.provider.class = null
+	bearer.auth.identity.pool.id = null
+	bearer.auth.issuer.endpoint.url = null
+	bearer.auth.logical.cluster = null
+	bearer.auth.scope = null
+	bearer.auth.scope.claim.name = scope
+	bearer.auth.sub.claim.name = sub
+	bearer.auth.token = [hidden]
+	context.name.strategy = class io.confluent.kafka.serializers.context.NullContextNameStrategy
+	http.connect.timeout.ms = 60000
+	http.read.timeout.ms = 60000
+	id.compatibility.strict = true
+	key.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+	latest.cache.size = 1000
+	latest.cache.ttl.sec = -1
+	latest.compatibility.strict = true
+	max.schemas.per.subject = 1000
+	normalize.schemas = false
+	propagate.schema.tags = false
+	proxy.host = 
+	proxy.port = -1
+	rule.actions = []
+	rule.executors = []
+	rule.service.loader.enable = true
+	schema.format = null
+	schema.reflection = false
+	schema.registry.basic.auth.user.info = [hidden]
+	schema.registry.ssl.cipher.suites = null
+	schema.registry.ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	schema.registry.ssl.endpoint.identification.algorithm = https
+	schema.registry.ssl.engine.factory.class = null
+	schema.registry.ssl.key.password = null
+	schema.registry.ssl.keymanager.algorithm = SunX509
+	schema.registry.ssl.keystore.certificate.chain = null
+	schema.registry.ssl.keystore.key = null
+	schema.registry.ssl.keystore.location = null
+	schema.registry.ssl.keystore.password = null
+	schema.registry.ssl.keystore.type = JKS
+	schema.registry.ssl.protocol = TLSv1.3
+	schema.registry.ssl.provider = null
+	schema.registry.ssl.secure.random.implementation = null
+	schema.registry.ssl.trustmanager.algorithm = PKIX
+	schema.registry.ssl.truststore.certificates = null
+	schema.registry.ssl.truststore.location = null
+	schema.registry.ssl.truststore.password = null
+	schema.registry.ssl.truststore.type = JKS
+	schema.registry.url = [http://schema-registry:8081]
+	specific.avro.key.type = null
+	specific.avro.reader = true
+	specific.avro.value.type = null
+	use.latest.version = false
+	use.latest.with.metadata = null
+	use.schema.id = -1
+	value.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+
+2024-12-18T10:35:22.583-03:00  INFO 1 --- [main] i.c.k.s.KafkaAvroDeserializerConfig      : KafkaAvroDeserializerConfig values: 
+	auto.register.schemas = true
+	avro.reflection.allow.null = false
+	avro.use.logical.type.converters = false
+	basic.auth.credentials.source = URL
+	basic.auth.user.info = [hidden]
+	bearer.auth.cache.expiry.buffer.seconds = 300
+	bearer.auth.client.id = null
+	bearer.auth.client.secret = null
+	bearer.auth.credentials.source = STATIC_TOKEN
+	bearer.auth.custom.provider.class = null
+	bearer.auth.identity.pool.id = null
+	bearer.auth.issuer.endpoint.url = null
+	bearer.auth.logical.cluster = null
+	bearer.auth.scope = null
+	bearer.auth.scope.claim.name = scope
+	bearer.auth.sub.claim.name = sub
+	bearer.auth.token = [hidden]
+	context.name.strategy = class io.confluent.kafka.serializers.context.NullContextNameStrategy
+	http.connect.timeout.ms = 60000
+	http.read.timeout.ms = 60000
+	id.compatibility.strict = true
+	key.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+	latest.cache.size = 1000
+	latest.cache.ttl.sec = -1
+	latest.compatibility.strict = true
+	max.schemas.per.subject = 1000
+	normalize.schemas = false
+	propagate.schema.tags = false
+	proxy.host = 
+	proxy.port = -1
+	rule.actions = []
+	rule.executors = []
+	rule.service.loader.enable = true
+	schema.format = null
+	schema.reflection = false
+	schema.registry.basic.auth.user.info = [hidden]
+	schema.registry.ssl.cipher.suites = null
+	schema.registry.ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	schema.registry.ssl.endpoint.identification.algorithm = https
+	schema.registry.ssl.engine.factory.class = null
+	schema.registry.ssl.key.password = null
+	schema.registry.ssl.keymanager.algorithm = SunX509
+	schema.registry.ssl.keystore.certificate.chain = null
+	schema.registry.ssl.keystore.key = null
+	schema.registry.ssl.keystore.location = null
+	schema.registry.ssl.keystore.password = null
+	schema.registry.ssl.keystore.type = JKS
+	schema.registry.ssl.protocol = TLSv1.3
+	schema.registry.ssl.provider = null
+	schema.registry.ssl.secure.random.implementation = null
+	schema.registry.ssl.trustmanager.algorithm = PKIX
+	schema.registry.ssl.truststore.certificates = null
+	schema.registry.ssl.truststore.location = null
+	schema.registry.ssl.truststore.password = null
+	schema.registry.ssl.truststore.type = JKS
+	schema.registry.url = [http://schema-registry:8081]
+	specific.avro.key.type = null
+	specific.avro.reader = true
+	specific.avro.value.type = null
+	use.latest.version = false
+	use.latest.with.metadata = null
+	use.schema.id = -1
+	value.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+
+2024-12-18T10:35:22.584-03:00  INFO 1 --- [main] i.c.k.s.KafkaAvroDeserializerConfig      : KafkaAvroDeserializerConfig values: 
+	auto.register.schemas = true
+	avro.reflection.allow.null = false
+	avro.use.logical.type.converters = false
+	basic.auth.credentials.source = URL
+	basic.auth.user.info = [hidden]
+	bearer.auth.cache.expiry.buffer.seconds = 300
+	bearer.auth.client.id = null
+	bearer.auth.client.secret = null
+	bearer.auth.credentials.source = STATIC_TOKEN
+	bearer.auth.custom.provider.class = null
+	bearer.auth.identity.pool.id = null
+	bearer.auth.issuer.endpoint.url = null
+	bearer.auth.logical.cluster = null
+	bearer.auth.scope = null
+	bearer.auth.scope.claim.name = scope
+	bearer.auth.sub.claim.name = sub
+	bearer.auth.token = [hidden]
+	context.name.strategy = class io.confluent.kafka.serializers.context.NullContextNameStrategy
+	http.connect.timeout.ms = 60000
+	http.read.timeout.ms = 60000
+	id.compatibility.strict = true
+	key.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+	latest.cache.size = 1000
+	latest.cache.ttl.sec = -1
+	latest.compatibility.strict = true
+	max.schemas.per.subject = 1000
+	normalize.schemas = false
+	propagate.schema.tags = false
+	proxy.host = 
+	proxy.port = -1
+	rule.actions = []
+	rule.executors = []
+	rule.service.loader.enable = true
+	schema.format = null
+	schema.reflection = false
+	schema.registry.basic.auth.user.info = [hidden]
+	schema.registry.ssl.cipher.suites = null
+	schema.registry.ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	schema.registry.ssl.endpoint.identification.algorithm = https
+	schema.registry.ssl.engine.factory.class = null
+	schema.registry.ssl.key.password = null
+	schema.registry.ssl.keymanager.algorithm = SunX509
+	schema.registry.ssl.keystore.certificate.chain = null
+	schema.registry.ssl.keystore.key = null
+	schema.registry.ssl.keystore.location = null
+	schema.registry.ssl.keystore.password = null
+	schema.registry.ssl.keystore.type = JKS
+	schema.registry.ssl.protocol = TLSv1.3
+	schema.registry.ssl.provider = null
+	schema.registry.ssl.secure.random.implementation = null
+	schema.registry.ssl.trustmanager.algorithm = PKIX
+	schema.registry.ssl.truststore.certificates = null
+	schema.registry.ssl.truststore.location = null
+	schema.registry.ssl.truststore.password = null
+	schema.registry.ssl.truststore.type = JKS
+	schema.registry.url = [http://schema-registry:8081]
+	specific.avro.key.type = null
+	specific.avro.reader = true
+	specific.avro.value.type = null
+	use.latest.version = false
+	use.latest.with.metadata = null
+	use.schema.id = -1
+	value.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+
+2024-12-18T10:35:26.365-03:00  WARN 1 --- [main] org.apache.kafka.clients.ClientUtils     : Couldn't resolve server kafka:9092 from bootstrap.servers as DNS resolution failed for kafka
+2024-12-18T10:35:26.368-03:00  INFO 1 --- [main] o.apache.kafka.common.metrics.Metrics    : Metrics scheduler closed
+2024-12-18T10:35:26.369-03:00  INFO 1 --- [main] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2024-12-18T10:35:26.372-03:00  INFO 1 --- [main] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.telemetry.internals.ClientTelemetryReporter
+2024-12-18T10:35:26.373-03:00  INFO 1 --- [main] o.apache.kafka.common.metrics.Metrics    : Metrics reporters closed
+2024-12-18T10:35:26.374-03:00  INFO 1 --- [main] o.a.kafka.common.utils.AppInfoParser     : App info kafka.consumer for consumer-worker-wallet-consumer-1 unregistered
+2024-12-18T10:35:26.377-03:00  INFO 1 --- [main] o.s.b.w.embedded.netty.GracefulShutdown  : Commencing graceful shutdown. Waiting for active requests to complete
+2024-12-18T10:35:26.379-03:00  INFO 1 --- [netty-shutdown] o.s.b.w.embedded.netty.GracefulShutdown  : Graceful shutdown complete
+2024-12-18T10:35:28.413-03:00  WARN 1 --- [main] onfigReactiveWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'org.springframework.kafka.config.internalKafkaListenerEndpointRegistry'
+2024-12-18T10:35:28.415-03:00  INFO 1 --- [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-18T10:35:28.421-03:00  INFO 1 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-12-18T10:35:28.427-03:00  INFO 1 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-12-18T10:35:28.446-03:00  INFO 1 --- [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-12-18T10:35:28.471-03:00 ERROR 1 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.context.ApplicationContextException: Failed to start bean 'org.springframework.kafka.config.internalKafkaListenerEndpointRegistry'
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:326) ~[spring-context-6.2.0.jar!/:6.2.0]
+	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:510) ~[spring-context-6.2.0.jar!/:6.2.0]
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75) ~[na:na]
+	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:295) ~[spring-context-6.2.0.jar!/:6.2.0]
+	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:240) ~[spring-context-6.2.0.jar!/:6.2.0]
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:1006) ~[spring-context-6.2.0.jar!/:6.2.0]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:630) ~[spring-context-6.2.0.jar!/:6.2.0]
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.refresh(ReactiveWebServerApplicationContext.java:66) ~[spring-boot-3.4.0.jar!/:3.4.0]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) ~[spring-boot-3.4.0.jar!/:3.4.0]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.4.0.jar!/:3.4.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.4.0.jar!/:3.4.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) ~[spring-boot-3.4.0.jar!/:3.4.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) ~[spring-boot-3.4.0.jar!/:3.4.0]
+	at com.recargapay.code.assessment.WorkerWalletApplication.main(WorkerWalletApplication.java:10) ~[!/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.boot.loader.launch.Launcher.launch(Launcher.java:102) ~[app.jar:na]
+	at org.springframework.boot.loader.launch.Launcher.launch(Launcher.java:64) ~[app.jar:na]
+	at org.springframework.boot.loader.launch.JarLauncher.main(JarLauncher.java:40) ~[app.jar:na]
+Caused by: org.apache.kafka.common.KafkaException: Failed to construct kafka consumer
+	at org.apache.kafka.clients.consumer.internals.LegacyKafkaConsumer.<init>(LegacyKafkaConsumer.java:265) ~[kafka-clients-3.8.1.jar!/:na]
+	at org.apache.kafka.clients.consumer.internals.ConsumerDelegateCreator.create(ConsumerDelegateCreator.java:65) ~[kafka-clients-3.8.1.jar!/:na]
+	at org.apache.kafka.clients.consumer.KafkaConsumer.<init>(KafkaConsumer.java:600) ~[kafka-clients-3.8.1.jar!/:na]
+	at org.apache.kafka.clients.consumer.KafkaConsumer.<init>(KafkaConsumer.java:595) ~[kafka-clients-3.8.1.jar!/:na]
+	at org.springframework.kafka.core.DefaultKafkaConsumerFactory$ExtendedKafkaConsumer.<init>(DefaultKafkaConsumerFactory.java:498) ~[spring-kafka-3.3.0.jar!/:3.3.0]
+	at org.springframework.kafka.core.DefaultKafkaConsumerFactory.createRawConsumer(DefaultKafkaConsumerFactory.java:453) ~[spring-kafka-3.3.0.jar!/:3.3.0]
+	at org.springframework.kafka.core.DefaultKafkaConsumerFactory.createKafkaConsumer(DefaultKafkaConsumerFactory.java:430) ~[spring-kafka-3.3.0.jar!/:3.3.0]
+	at org.springframework.kafka.core.DefaultKafkaConsumerFactory.createConsumerWithAdjustedProperties(DefaultKafkaConsumerFactory.java:407) ~[spring-kafka-3.3.0.jar!/:3.3.0]
+	at org.springframework.kafka.core.DefaultKafkaConsumerFactory.createKafkaConsumer(DefaultKafkaConsumerFactory.java:374) ~[spring-kafka-3.3.0.jar!/:3.3.0]
+	at org.springframework.kafka.core.DefaultKafkaConsumerFactory.createConsumer(DefaultKafkaConsumerFactory.java:335) ~[spring-kafka-3.3.0.jar!/:3.3.0]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.<init>(KafkaMessageListenerContainer.java:874) ~[spring-kafka-3.3.0.jar!/:3.3.0]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer.doStart(KafkaMessageListenerContainer.java:385) ~[spring-kafka-3.3.0.jar!/:3.3.0]
+	at org.springframework.kafka.listener.AbstractMessageListenerContainer.start(AbstractMessageListenerContainer.java:520) ~[spring-kafka-3.3.0.jar!/:3.3.0]
+	at org.springframework.kafka.listener.ConcurrentMessageListenerContainer.doStart(ConcurrentMessageListenerContainer.java:264) ~[spring-kafka-3.3.0.jar!/:3.3.0]
+	at org.springframework.kafka.listener.AbstractMessageListenerContainer.start(AbstractMessageListenerContainer.java:520) ~[spring-kafka-3.3.0.jar!/:3.3.0]
+	at org.springframework.kafka.config.KafkaListenerEndpointRegistry.startIfNecessary(KafkaListenerEndpointRegistry.java:436) ~[spring-kafka-3.3.0.jar!/:3.3.0]
+	at org.springframework.kafka.config.KafkaListenerEndpointRegistry.start(KafkaListenerEndpointRegistry.java:382) ~[spring-kafka-3.3.0.jar!/:3.3.0]
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:323) ~[spring-context-6.2.0.jar!/:6.2.0]
+	... 20 common frames omitted
+Caused by: org.apache.kafka.common.config.ConfigException: No resolvable bootstrap urls given in bootstrap.servers
+	at org.apache.kafka.clients.ClientUtils.parseAndValidateAddresses(ClientUtils.java:103) ~[kafka-clients-3.8.1.jar!/:na]
+	at org.apache.kafka.clients.ClientUtils.parseAndValidateAddresses(ClientUtils.java:62) ~[kafka-clients-3.8.1.jar!/:na]
+	at org.apache.kafka.clients.ClientUtils.parseAndValidateAddresses(ClientUtils.java:58) ~[kafka-clients-3.8.1.jar!/:na]
+	at org.apache.kafka.clients.consumer.internals.LegacyKafkaConsumer.<init>(LegacyKafkaConsumer.java:184) ~[kafka-clients-3.8.1.jar!/:na]
+	... 37 common frames omitted
+
+2024-12-18T10:38:24.646-03:00  INFO 1 --- [main] c.r.c.a.WorkerWalletApplication          : Starting WorkerWalletApplication using Java 17-ea with PID 1 (/opt/app.jar started by root in /opt)
+2024-12-18T10:38:24.652-03:00  INFO 1 --- [main] c.r.c.a.WorkerWalletApplication          : No active profile set, falling back to 1 default profile: "default"
+2024-12-18T10:38:25.745-03:00  INFO 1 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-18T10:38:25.923-03:00  INFO 1 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 158 ms. Found 2 JPA repository interfaces.
+2024-12-18T10:38:27.521-03:00  INFO 1 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-18T10:38:27.763-03:00  INFO 1 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.2.Final
+2024-12-18T10:38:27.874-03:00  INFO 1 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-12-18T10:38:28.591-03:00  INFO 1 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-18T10:38:28.650-03:00  INFO 1 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-12-18T10:38:28.993-03:00  INFO 1 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7019d619
+2024-12-18T10:38:28.997-03:00  INFO 1 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-12-18T10:38:29.051-03:00  WARN 1 --- [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-12-18T10:38:29.094-03:00  INFO 1 --- [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2024-12-18T10:38:30.410-03:00  INFO 1 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-18T10:38:30.468-03:00  INFO 1 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-18T10:38:31.452-03:00  INFO 1 --- [main] c.r.code.assessment.config.JWKConf       : CHAVE PUBLICA: 
+ {"keys":[{"kid":"4_kjCXsXh0mcHuxg_x5E1lWe0_HPcvrj6nwmGlWMWaA","kty":"RSA","alg":"RS256","use":"sig","n":"vpINwzRy9gyPXVgwXaYHQHFSW54cj-im7gkA8fi1krzy5ivIGRSc3QAq42n-E4G6-MgrTs8c5LqhpCav8ZNPEnp9astmfs6cLwNe20ABEdFxS7puuHVsNnap5lVeVGDRKOTDA3S0WO3WcnShg_dbK7UBDmnDrLs2vz8MIIz9cEpGVxZIoKXo3n8URJpdf9cu5e_-Vvnzv3C4wZmCkl7fkFKEIQbsnuVpt362gs9mgLG6ffqzi-CV2qUyBJ3jLW9dc_IdgnY7JRQSRJfiEJbqXwX5By0dnYXU857gqTLLXb9hb-wQJrtUUdGmH3ImITNa9t7EfKX7Hh5QLTIGVKZ5kQ","e":"AQAB","x5c":["MIICuzCCAaMCBgGT2f2w9DANBgkqhkiG9w0BAQsFADAhMR8wHQYDVQQDDBZyZWNhcmdhcGF5X3dhbGxldF90ZXN0MB4XDTI0MTIxODEzMzY0MloXDTM0MTIxODEzMzgyMlowITEfMB0GA1UEAwwWcmVjYXJnYXBheV93YWxsZXRfdGVzdDCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAL6SDcM0cvYMj11YMF2mB0BxUlueHI/opu4JAPH4tZK88uYryBkUnN0AKuNp/hOBuvjIK07PHOS6oaQmr/GTTxJ6fWrLZn7OnC8DXttAARHRcUu6brh1bDZ2qeZVXlRg0SjkwwN0tFjt1nJ0oYP3Wyu1AQ5pw6y7Nr8/DCCM/XBKRlcWSKCl6N5/FESaXX/XLuXv/lb5879wuMGZgpJe35BShCEG7J7labd+toLPZoCxun36s4vgldqlMgSd4y1vXXPyHYJ2OyUUEkSX4hCW6l8F+QctHZ2F1POe4Kkyy12/YW/sECa7VFHRph9yJiEzWvbexHyl+x4eUC0yBlSmeZECAwEAATANBgkqhkiG9w0BAQsFAAOCAQEAONAx0qtBc32Wr+k9yXeSGpceTM/2XyiPDTKSM5alR8TVoGAcRgas90YNaj8DRQIL5nc1V0uqr9kszQApFxhtcEaKk2ptj4PyGSAe9iSwh/Gbuu3+OmnGbTOlWQ0HSlwIIIj928Dx6CAz1kZn1MbZEvn3N81jo92ZksnrnwhcjMOs1cIXnNUKFbwuybb4BwdNCi0d7+EIzvkscgX106doGIHaYTEqsdw+HjIK48j7Qws2ukEGxXxSsHFu9gH51fzmlaGd7m7EeWITtp0kmAU5M6GrCDF3m70X22H4dBmrsHQCLkfTkLbX3y/BtG5uGh3HBqVQGv1+xG2g+jhM5DIjHw=="],"x5t":"GYG4JVXn-ybgszH9_RUEuunOJ5A","x5t#S256":"4jCf4QP-XYzJwgAi_Q3jpLj0omFTaaKtuRcZaAcYzU8"},{"kid":"0i8YL7T2wRytOv2DvISLUTWS7HXJt4fgajvEORQod3A","kty":"RSA","alg":"RSA-OAEP","use":"enc","n":"s_jxCtz0vSQ9EpydrcfroAx6cIQzEBalGTZH2vkWLUTICT5qCgcItIgZbDJLBp2xPSCqdk2Abu9LRHQXnpEU2PCXm7zPRKm32RJcg8wLMH20lUTRRvKVHXJXHBbBYQY3D4Lwkv5QZqk6_3L6IfbxsAIRqwQ8-ED-sNsUwOJNCAU36s7Ioxs_YDPSeoyCZYAGCh6Tc1j3VOZys3lprtomNL74amfGBuSl5CtpKSKZfeVRdT-8KuEf7ox5FymX8X-QWRHrFSUcT-YfZIpS5uNwrGuJVmPtznCWqrURYdXEJGPIOot7inbOWJkXAAeXaXVOqpseJYXeyC5SM5TwjHgIYw","e":"AQAB","x5c":["MIICuzCCAaMCBgGT2f2wSTANBgkqhkiG9w0BAQsFADAhMR8wHQYDVQQDDBZyZWNhcmdhcGF5X3dhbGxldF90ZXN0MB4XDTI0MTIxODEzMzY0MVoXDTM0MTIxODEzMzgyMVowITEfMB0GA1UEAwwWcmVjYXJnYXBheV93YWxsZXRfdGVzdDCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBALP48Qrc9L0kPRKcna3H66AMenCEMxAWpRk2R9r5Fi1EyAk+agoHCLSIGWwySwadsT0gqnZNgG7vS0R0F56RFNjwl5u8z0Spt9kSXIPMCzB9tJVE0UbylR1yVxwWwWEGNw+C8JL+UGapOv9y+iH28bACEasEPPhA/rDbFMDiTQgFN+rOyKMbP2Az0nqMgmWABgoek3NY91TmcrN5aa7aJjS++GpnxgbkpeQraSkimX3lUXU/vCrhH+6MeRcpl/F/kFkR6xUlHE/mH2SKUubjcKxriVZj7c5wlqq1EWHVxCRjyDqLe4p2zliZFwAHl2l1TqqbHiWF3sguUjOU8Ix4CGMCAwEAATANBgkqhkiG9w0BAQsFAAOCAQEARVDJkQqsNFK3OG7n9psXCHMhxOU3kn4x5ablPY1UUxQVzLdVzJJv7o1Ujnq85H4Zd3gYf7F+wINmvt1023MLZ1IgwQHDFtZA+mz1HxR36OpdFmEZZxskLWvoRD9ce+/HrkC+N2MptqvmjQL7J9UXUkljClOc3XLkXLfxlYPFydCtJutqCON5kvrZDKWoVYYgx0Z2Y+YJ8DLSk+SaGGgcOmvGS+/BITl4Gf2Iydgq9MKVomIGo0hkl45huVptAIdvt9IwlUANdRVKjgDJZQKneUwDrujAOZuG8Zepc/Gw28EL/4RVPZ8SwU4TwN7Vva3hQhl9Vu706DxF+qjErR+n0Q=="],"x5t":"_kZma5uBWdzA8kBifLRo9HSahyc","x5t#S256":"fiic51QyVGup5Zkj3ONLWyZeiiFTYRz01ckxw25i9w0"}]}
+2024-12-18T10:38:31.999-03:00  INFO 1 --- [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-12-18T10:38:33.155-03:00  INFO 1 --- [main] c.r.c.assessment.audit.AuditLogAspect    : Audit Log - Iniciando execução do método: String com.recargapay.code.assessment.JWKConfPort.jwkJsonPort(Builder)
+2024-12-18T10:38:33.157-03:00  INFO 1 --- [main] c.r.c.assessment.audit.AuditLogAspect    : Parâmetros: org.springframework.web.reactive.function.client.DefaultWebClientBuilder@2baf9cd4
+2024-12-18T10:38:33.175-03:00  INFO 1 --- [main] c.r.c.assessment.audit.AuditLogAspect    : Audit Log - Método concluído: String com.recargapay.code.assessment.JWKConfPort.jwkJsonPort(Builder)
+2024-12-18T10:38:33.177-03:00  INFO 1 --- [main] c.r.c.assessment.audit.AuditLogAspect    : Resultado: {"keys":[{"kid":"4_kjCXsXh0mcHuxg_x5E1lWe0_HPcvrj6nwmGlWMWaA","kty":"RSA","alg":"RS256","use":"sig","n":"vpINwzRy9gyPXVgwXaYHQHFSW54cj-im7gkA8fi1krzy5ivIGRSc3QAq42n-E4G6-MgrTs8c5LqhpCav8ZNPEnp9astmfs6cLwNe20ABEdFxS7puuHVsNnap5lVeVGDRKOTDA3S0WO3WcnShg_dbK7UBDmnDrLs2vz8MIIz9cEpGVxZIoKXo3n8URJpdf9cu5e_-Vvnzv3C4wZmCkl7fkFKEIQbsnuVpt362gs9mgLG6ffqzi-CV2qUyBJ3jLW9dc_IdgnY7JRQSRJfiEJbqXwX5By0dnYXU857gqTLLXb9hb-wQJrtUUdGmH3ImITNa9t7EfKX7Hh5QLTIGVKZ5kQ","e":"AQAB","x5c":["MIICuzCCAaMCBgGT2f2w9DANBgkqhkiG9w0BAQsFADAhMR8wHQYDVQQDDBZyZWNhcmdhcGF5X3dhbGxldF90ZXN0MB4XDTI0MTIxODEzMzY0MloXDTM0MTIxODEzMzgyMlowITEfMB0GA1UEAwwWcmVjYXJnYXBheV93YWxsZXRfdGVzdDCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAL6SDcM0cvYMj11YMF2mB0BxUlueHI/opu4JAPH4tZK88uYryBkUnN0AKuNp/hOBuvjIK07PHOS6oaQmr/GTTxJ6fWrLZn7OnC8DXttAARHRcUu6brh1bDZ2qeZVXlRg0SjkwwN0tFjt1nJ0oYP3Wyu1AQ5pw6y7Nr8/DCCM/XBKRlcWSKCl6N5/FESaXX/XLuXv/lb5879wuMGZgpJe35BShCEG7J7labd+toLPZoCxun36s4vgldqlMgSd4y1vXXPyHYJ2OyUUEkSX4hCW6l8F+QctHZ2F1POe4Kkyy12/YW/sECa7VFHRph9yJiEzWvbexHyl+x4eUC0yBlSmeZECAwEAATANBgkqhkiG9w0BAQsFAAOCAQEAONAx0qtBc32Wr+k9yXeSGpceTM/2XyiPDTKSM5alR8TVoGAcRgas90YNaj8DRQIL5nc1V0uqr9kszQApFxhtcEaKk2ptj4PyGSAe9iSwh/Gbuu3+OmnGbTOlWQ0HSlwIIIj928Dx6CAz1kZn1MbZEvn3N81jo92ZksnrnwhcjMOs1cIXnNUKFbwuybb4BwdNCi0d7+EIzvkscgX106doGIHaYTEqsdw+HjIK48j7Qws2ukEGxXxSsHFu9gH51fzmlaGd7m7EeWITtp0kmAU5M6GrCDF3m70X22H4dBmrsHQCLkfTkLbX3y/BtG5uGh3HBqVQGv1+xG2g+jhM5DIjHw=="],"x5t":"GYG4JVXn-ybgszH9_RUEuunOJ5A","x5t#S256":"4jCf4QP-XYzJwgAi_Q3jpLj0omFTaaKtuRcZaAcYzU8"},{"kid":"0i8YL7T2wRytOv2DvISLUTWS7HXJt4fgajvEORQod3A","kty":"RSA","alg":"RSA-OAEP","use":"enc","n":"s_jxCtz0vSQ9EpydrcfroAx6cIQzEBalGTZH2vkWLUTICT5qCgcItIgZbDJLBp2xPSCqdk2Abu9LRHQXnpEU2PCXm7zPRKm32RJcg8wLMH20lUTRRvKVHXJXHBbBYQY3D4Lwkv5QZqk6_3L6IfbxsAIRqwQ8-ED-sNsUwOJNCAU36s7Ioxs_YDPSeoyCZYAGCh6Tc1j3VOZys3lprtomNL74amfGBuSl5CtpKSKZfeVRdT-8KuEf7ox5FymX8X-QWRHrFSUcT-YfZIpS5uNwrGuJVmPtznCWqrURYdXEJGPIOot7inbOWJkXAAeXaXVOqpseJYXeyC5SM5TwjHgIYw","e":"AQAB","x5c":["MIICuzCCAaMCBgGT2f2wSTANBgkqhkiG9w0BAQsFADAhMR8wHQYDVQQDDBZyZWNhcmdhcGF5X3dhbGxldF90ZXN0MB4XDTI0MTIxODEzMzY0MVoXDTM0MTIxODEzMzgyMVowITEfMB0GA1UEAwwWcmVjYXJnYXBheV93YWxsZXRfdGVzdDCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBALP48Qrc9L0kPRKcna3H66AMenCEMxAWpRk2R9r5Fi1EyAk+agoHCLSIGWwySwadsT0gqnZNgG7vS0R0F56RFNjwl5u8z0Spt9kSXIPMCzB9tJVE0UbylR1yVxwWwWEGNw+C8JL+UGapOv9y+iH28bACEasEPPhA/rDbFMDiTQgFN+rOyKMbP2Az0nqMgmWABgoek3NY91TmcrN5aa7aJjS++GpnxgbkpeQraSkimX3lUXU/vCrhH+6MeRcpl/F/kFkR6xUlHE/mH2SKUubjcKxriVZj7c5wlqq1EWHVxCRjyDqLe4p2zliZFwAHl2l1TqqbHiWF3sguUjOU8Ix4CGMCAwEAATANBgkqhkiG9w0BAQsFAAOCAQEARVDJkQqsNFK3OG7n9psXCHMhxOU3kn4x5ablPY1UUxQVzLdVzJJv7o1Ujnq85H4Zd3gYf7F+wINmvt1023MLZ1IgwQHDFtZA+mz1HxR36OpdFmEZZxskLWvoRD9ce+/HrkC+N2MptqvmjQL7J9UXUkljClOc3XLkXLfxlYPFydCtJutqCON5kvrZDKWoVYYgx0Z2Y+YJ8DLSk+SaGGgcOmvGS+/BITl4Gf2Iydgq9MKVomIGo0hkl45huVptAIdvt9IwlUANdRVKjgDJZQKneUwDrujAOZuG8Zepc/Gw28EL/4RVPZ8SwU4TwN7Vva3hQhl9Vu706DxF+qjErR+n0Q=="],"x5t":"_kZma5uBWdzA8kBifLRo9HSahyc","x5t#S256":"fiic51QyVGup5Zkj3ONLWyZeiiFTYRz01ckxw25i9w0"}]}
+2024-12-18T10:38:34.410-03:00  INFO 1 --- [main] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port 8085 (http)
+2024-12-18T10:38:34.532-03:00  INFO 1 --- [main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 1000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = earliest
+	bootstrap.servers = [kafka:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-worker-wallet-consumer-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	enable.metrics.push = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = worker-wallet-consumer
+	group.instance.id = null
+	group.protocol = classic
+	group.remote.assignor = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class io.confluent.kafka.serializers.KafkaAvroDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metadata.recovery.strategy = none
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class io.confluent.kafka.serializers.KafkaAvroDeserializer
+
+2024-12-18T10:38:34.628-03:00  INFO 1 --- [main] o.a.k.c.t.i.KafkaMetricsCollector        : initializing Kafka metrics collector
+2024-12-18T10:38:34.782-03:00  INFO 1 --- [main] i.c.k.s.KafkaAvroDeserializerConfig      : KafkaAvroDeserializerConfig values: 
+	auto.register.schemas = true
+	avro.reflection.allow.null = false
+	avro.use.logical.type.converters = false
+	basic.auth.credentials.source = URL
+	basic.auth.user.info = [hidden]
+	bearer.auth.cache.expiry.buffer.seconds = 300
+	bearer.auth.client.id = null
+	bearer.auth.client.secret = null
+	bearer.auth.credentials.source = STATIC_TOKEN
+	bearer.auth.custom.provider.class = null
+	bearer.auth.identity.pool.id = null
+	bearer.auth.issuer.endpoint.url = null
+	bearer.auth.logical.cluster = null
+	bearer.auth.scope = null
+	bearer.auth.scope.claim.name = scope
+	bearer.auth.sub.claim.name = sub
+	bearer.auth.token = [hidden]
+	context.name.strategy = class io.confluent.kafka.serializers.context.NullContextNameStrategy
+	http.connect.timeout.ms = 60000
+	http.read.timeout.ms = 60000
+	id.compatibility.strict = true
+	key.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+	latest.cache.size = 1000
+	latest.cache.ttl.sec = -1
+	latest.compatibility.strict = true
+	max.schemas.per.subject = 1000
+	normalize.schemas = false
+	propagate.schema.tags = false
+	proxy.host = 
+	proxy.port = -1
+	rule.actions = []
+	rule.executors = []
+	rule.service.loader.enable = true
+	schema.format = null
+	schema.reflection = false
+	schema.registry.basic.auth.user.info = [hidden]
+	schema.registry.ssl.cipher.suites = null
+	schema.registry.ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	schema.registry.ssl.endpoint.identification.algorithm = https
+	schema.registry.ssl.engine.factory.class = null
+	schema.registry.ssl.key.password = null
+	schema.registry.ssl.keymanager.algorithm = SunX509
+	schema.registry.ssl.keystore.certificate.chain = null
+	schema.registry.ssl.keystore.key = null
+	schema.registry.ssl.keystore.location = null
+	schema.registry.ssl.keystore.password = null
+	schema.registry.ssl.keystore.type = JKS
+	schema.registry.ssl.protocol = TLSv1.3
+	schema.registry.ssl.provider = null
+	schema.registry.ssl.secure.random.implementation = null
+	schema.registry.ssl.trustmanager.algorithm = PKIX
+	schema.registry.ssl.truststore.certificates = null
+	schema.registry.ssl.truststore.location = null
+	schema.registry.ssl.truststore.password = null
+	schema.registry.ssl.truststore.type = JKS
+	schema.registry.url = [http://schema-registry:8081]
+	specific.avro.key.type = null
+	specific.avro.reader = true
+	specific.avro.value.type = null
+	use.latest.version = false
+	use.latest.with.metadata = null
+	use.schema.id = -1
+	value.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+
+2024-12-18T10:38:34.784-03:00  INFO 1 --- [main] i.c.k.s.KafkaAvroDeserializerConfig      : KafkaAvroDeserializerConfig values: 
+	auto.register.schemas = true
+	avro.reflection.allow.null = false
+	avro.use.logical.type.converters = false
+	basic.auth.credentials.source = URL
+	basic.auth.user.info = [hidden]
+	bearer.auth.cache.expiry.buffer.seconds = 300
+	bearer.auth.client.id = null
+	bearer.auth.client.secret = null
+	bearer.auth.credentials.source = STATIC_TOKEN
+	bearer.auth.custom.provider.class = null
+	bearer.auth.identity.pool.id = null
+	bearer.auth.issuer.endpoint.url = null
+	bearer.auth.logical.cluster = null
+	bearer.auth.scope = null
+	bearer.auth.scope.claim.name = scope
+	bearer.auth.sub.claim.name = sub
+	bearer.auth.token = [hidden]
+	context.name.strategy = class io.confluent.kafka.serializers.context.NullContextNameStrategy
+	http.connect.timeout.ms = 60000
+	http.read.timeout.ms = 60000
+	id.compatibility.strict = true
+	key.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+	latest.cache.size = 1000
+	latest.cache.ttl.sec = -1
+	latest.compatibility.strict = true
+	max.schemas.per.subject = 1000
+	normalize.schemas = false
+	propagate.schema.tags = false
+	proxy.host = 
+	proxy.port = -1
+	rule.actions = []
+	rule.executors = []
+	rule.service.loader.enable = true
+	schema.format = null
+	schema.reflection = false
+	schema.registry.basic.auth.user.info = [hidden]
+	schema.registry.ssl.cipher.suites = null
+	schema.registry.ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	schema.registry.ssl.endpoint.identification.algorithm = https
+	schema.registry.ssl.engine.factory.class = null
+	schema.registry.ssl.key.password = null
+	schema.registry.ssl.keymanager.algorithm = SunX509
+	schema.registry.ssl.keystore.certificate.chain = null
+	schema.registry.ssl.keystore.key = null
+	schema.registry.ssl.keystore.location = null
+	schema.registry.ssl.keystore.password = null
+	schema.registry.ssl.keystore.type = JKS
+	schema.registry.ssl.protocol = TLSv1.3
+	schema.registry.ssl.provider = null
+	schema.registry.ssl.secure.random.implementation = null
+	schema.registry.ssl.trustmanager.algorithm = PKIX
+	schema.registry.ssl.truststore.certificates = null
+	schema.registry.ssl.truststore.location = null
+	schema.registry.ssl.truststore.password = null
+	schema.registry.ssl.truststore.type = JKS
+	schema.registry.url = [http://schema-registry:8081]
+	specific.avro.key.type = null
+	specific.avro.reader = true
+	specific.avro.value.type = null
+	use.latest.version = false
+	use.latest.with.metadata = null
+	use.schema.id = -1
+	value.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+
+2024-12-18T10:38:34.960-03:00  INFO 1 --- [main] i.c.k.s.KafkaAvroDeserializerConfig      : KafkaAvroDeserializerConfig values: 
+	auto.register.schemas = true
+	avro.reflection.allow.null = false
+	avro.use.logical.type.converters = false
+	basic.auth.credentials.source = URL
+	basic.auth.user.info = [hidden]
+	bearer.auth.cache.expiry.buffer.seconds = 300
+	bearer.auth.client.id = null
+	bearer.auth.client.secret = null
+	bearer.auth.credentials.source = STATIC_TOKEN
+	bearer.auth.custom.provider.class = null
+	bearer.auth.identity.pool.id = null
+	bearer.auth.issuer.endpoint.url = null
+	bearer.auth.logical.cluster = null
+	bearer.auth.scope = null
+	bearer.auth.scope.claim.name = scope
+	bearer.auth.sub.claim.name = sub
+	bearer.auth.token = [hidden]
+	context.name.strategy = class io.confluent.kafka.serializers.context.NullContextNameStrategy
+	http.connect.timeout.ms = 60000
+	http.read.timeout.ms = 60000
+	id.compatibility.strict = true
+	key.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+	latest.cache.size = 1000
+	latest.cache.ttl.sec = -1
+	latest.compatibility.strict = true
+	max.schemas.per.subject = 1000
+	normalize.schemas = false
+	propagate.schema.tags = false
+	proxy.host = 
+	proxy.port = -1
+	rule.actions = []
+	rule.executors = []
+	rule.service.loader.enable = true
+	schema.format = null
+	schema.reflection = false
+	schema.registry.basic.auth.user.info = [hidden]
+	schema.registry.ssl.cipher.suites = null
+	schema.registry.ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	schema.registry.ssl.endpoint.identification.algorithm = https
+	schema.registry.ssl.engine.factory.class = null
+	schema.registry.ssl.key.password = null
+	schema.registry.ssl.keymanager.algorithm = SunX509
+	schema.registry.ssl.keystore.certificate.chain = null
+	schema.registry.ssl.keystore.key = null
+	schema.registry.ssl.keystore.location = null
+	schema.registry.ssl.keystore.password = null
+	schema.registry.ssl.keystore.type = JKS
+	schema.registry.ssl.protocol = TLSv1.3
+	schema.registry.ssl.provider = null
+	schema.registry.ssl.secure.random.implementation = null
+	schema.registry.ssl.trustmanager.algorithm = PKIX
+	schema.registry.ssl.truststore.certificates = null
+	schema.registry.ssl.truststore.location = null
+	schema.registry.ssl.truststore.password = null
+	schema.registry.ssl.truststore.type = JKS
+	schema.registry.url = [http://schema-registry:8081]
+	specific.avro.key.type = null
+	specific.avro.reader = true
+	specific.avro.value.type = null
+	use.latest.version = false
+	use.latest.with.metadata = null
+	use.schema.id = -1
+	value.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+
+2024-12-18T10:38:34.961-03:00  INFO 1 --- [main] i.c.k.s.KafkaAvroDeserializerConfig      : KafkaAvroDeserializerConfig values: 
+	auto.register.schemas = true
+	avro.reflection.allow.null = false
+	avro.use.logical.type.converters = false
+	basic.auth.credentials.source = URL
+	basic.auth.user.info = [hidden]
+	bearer.auth.cache.expiry.buffer.seconds = 300
+	bearer.auth.client.id = null
+	bearer.auth.client.secret = null
+	bearer.auth.credentials.source = STATIC_TOKEN
+	bearer.auth.custom.provider.class = null
+	bearer.auth.identity.pool.id = null
+	bearer.auth.issuer.endpoint.url = null
+	bearer.auth.logical.cluster = null
+	bearer.auth.scope = null
+	bearer.auth.scope.claim.name = scope
+	bearer.auth.sub.claim.name = sub
+	bearer.auth.token = [hidden]
+	context.name.strategy = class io.confluent.kafka.serializers.context.NullContextNameStrategy
+	http.connect.timeout.ms = 60000
+	http.read.timeout.ms = 60000
+	id.compatibility.strict = true
+	key.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+	latest.cache.size = 1000
+	latest.cache.ttl.sec = -1
+	latest.compatibility.strict = true
+	max.schemas.per.subject = 1000
+	normalize.schemas = false
+	propagate.schema.tags = false
+	proxy.host = 
+	proxy.port = -1
+	rule.actions = []
+	rule.executors = []
+	rule.service.loader.enable = true
+	schema.format = null
+	schema.reflection = false
+	schema.registry.basic.auth.user.info = [hidden]
+	schema.registry.ssl.cipher.suites = null
+	schema.registry.ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	schema.registry.ssl.endpoint.identification.algorithm = https
+	schema.registry.ssl.engine.factory.class = null
+	schema.registry.ssl.key.password = null
+	schema.registry.ssl.keymanager.algorithm = SunX509
+	schema.registry.ssl.keystore.certificate.chain = null
+	schema.registry.ssl.keystore.key = null
+	schema.registry.ssl.keystore.location = null
+	schema.registry.ssl.keystore.password = null
+	schema.registry.ssl.keystore.type = JKS
+	schema.registry.ssl.protocol = TLSv1.3
+	schema.registry.ssl.provider = null
+	schema.registry.ssl.secure.random.implementation = null
+	schema.registry.ssl.trustmanager.algorithm = PKIX
+	schema.registry.ssl.truststore.certificates = null
+	schema.registry.ssl.truststore.location = null
+	schema.registry.ssl.truststore.password = null
+	schema.registry.ssl.truststore.type = JKS
+	schema.registry.url = [http://schema-registry:8081]
+	specific.avro.key.type = null
+	specific.avro.reader = true
+	specific.avro.value.type = null
+	use.latest.version = false
+	use.latest.with.metadata = null
+	use.schema.id = -1
+	value.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+
+2024-12-18T10:38:35.072-03:00  INFO 1 --- [main] o.a.k.clients.consumer.ConsumerConfig    : These configurations '[schema.registry.url, specific.avro.reader]' were supplied but are not used yet.
+2024-12-18T10:38:35.075-03:00  INFO 1 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.8.1
+2024-12-18T10:38:35.077-03:00  INFO 1 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 70d6ff42debf7e17
+2024-12-18T10:38:35.077-03:00  INFO 1 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1734529115073
+2024-12-18T10:38:35.083-03:00  INFO 1 --- [main] o.a.k.c.c.internals.LegacyKafkaConsumer  : [Consumer clientId=consumer-worker-wallet-consumer-1, groupId=worker-wallet-consumer] Subscribed to topic(s): transaction
+2024-12-18T10:38:35.108-03:00  INFO 1 --- [main] c.r.c.a.WorkerWalletApplication          : Started WorkerWalletApplication in 11.159 seconds (process running for 11.767)
+2024-12-18T10:38:35.420-03:00  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-worker-wallet-consumer-1, groupId=worker-wallet-consumer] Error while fetching metadata with correlation id 2 : {transaction=LEADER_NOT_AVAILABLE}
+2024-12-18T10:38:35.556-03:00  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-worker-wallet-consumer-1, groupId=worker-wallet-consumer] Cluster ID: B1yhnfOmSiWQV5tLETJT3g
+2024-12-18T10:38:35.579-03:00  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-worker-wallet-consumer-1, groupId=worker-wallet-consumer] Discovered group coordinator kafka:9092 (id: 2147483647 rack: null)
+2024-12-18T10:38:35.598-03:00  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-worker-wallet-consumer-1, groupId=worker-wallet-consumer] (Re-)joining group
+2024-12-18T10:38:35.616-03:00  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-worker-wallet-consumer-1, groupId=worker-wallet-consumer] Request joining group due to: need to re-join with the given member-id: consumer-worker-wallet-consumer-1-28ad1f9d-9753-4e67-9c4d-9efe1c259bb4
+2024-12-18T10:38:35.619-03:00  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-worker-wallet-consumer-1, groupId=worker-wallet-consumer] Error while fetching metadata with correlation id 7 : {transaction=LEADER_NOT_AVAILABLE}
+2024-12-18T10:38:35.621-03:00  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-worker-wallet-consumer-1, groupId=worker-wallet-consumer] (Re-)joining group
+2024-12-18T10:38:35.629-03:00  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-worker-wallet-consumer-1, groupId=worker-wallet-consumer] Successfully joined group with generation Generation{generationId=1, memberId='consumer-worker-wallet-consumer-1-28ad1f9d-9753-4e67-9c4d-9efe1c259bb4', protocol='range'}
+2024-12-18T10:38:35.841-03:00  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-worker-wallet-consumer-1, groupId=worker-wallet-consumer] Finished assignment for group at generation 1: {consumer-worker-wallet-consumer-1-28ad1f9d-9753-4e67-9c4d-9efe1c259bb4=Assignment(partitions=[transaction-0])}
+2024-12-18T10:38:35.847-03:00  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-worker-wallet-consumer-1, groupId=worker-wallet-consumer] Successfully synced group in generation Generation{generationId=1, memberId='consumer-worker-wallet-consumer-1-28ad1f9d-9753-4e67-9c4d-9efe1c259bb4', protocol='range'}
+2024-12-18T10:38:35.849-03:00  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-worker-wallet-consumer-1, groupId=worker-wallet-consumer] Notifying assignor about the new Assignment(partitions=[transaction-0])
+2024-12-18T10:38:35.851-03:00  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] k.c.c.i.ConsumerRebalanceListenerInvoker : [Consumer clientId=consumer-worker-wallet-consumer-1, groupId=worker-wallet-consumer] Adding newly assigned partitions: transaction-0
+2024-12-18T10:38:35.864-03:00  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-worker-wallet-consumer-1, groupId=worker-wallet-consumer] Found no committed offset for partition transaction-0
+2024-12-18T10:38:35.869-03:00  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.SubscriptionState    : [Consumer clientId=consumer-worker-wallet-consumer-1, groupId=worker-wallet-consumer] Resetting offset for partition transaction-0 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[kafka:9092 (id: 0 rack: null)], epoch=0}}.
+2024-12-18T10:38:35.871-03:00  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : worker-wallet-consumer: partitions assigned: [transaction-0]
+2024-12-18T10:39:20.163-03:00  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] k.c.c.i.ConsumerRebalanceListenerInvoker : [Consumer clientId=consumer-worker-wallet-consumer-1, groupId=worker-wallet-consumer] Revoke previously assigned partitions transaction-0
+2024-12-18T10:39:20.166-03:00  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : worker-wallet-consumer: partitions revoked: [transaction-0]
+2024-12-18T10:39:20.168-03:00  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-worker-wallet-consumer-1, groupId=worker-wallet-consumer] Member consumer-worker-wallet-consumer-1-28ad1f9d-9753-4e67-9c4d-9efe1c259bb4 sending LeaveGroup request to coordinator kafka:9092 (id: 2147483647 rack: null) due to the consumer unsubscribed from all topics
+2024-12-18T10:39:20.169-03:00  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-worker-wallet-consumer-1, groupId=worker-wallet-consumer] Resetting generation and member id due to: consumer pro-actively leaving the group
+2024-12-18T10:39:20.170-03:00  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-worker-wallet-consumer-1, groupId=worker-wallet-consumer] Request joining group due to: consumer pro-actively leaving the group
+2024-12-18T10:39:20.170-03:00  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.LegacyKafkaConsumer  : [Consumer clientId=consumer-worker-wallet-consumer-1, groupId=worker-wallet-consumer] Unsubscribed all topics or patterns and assigned partitions
+2024-12-18T10:39:20.173-03:00  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-worker-wallet-consumer-1, groupId=worker-wallet-consumer] Resetting generation and member id due to: consumer pro-actively leaving the group
+2024-12-18T10:39:20.174-03:00  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-worker-wallet-consumer-1, groupId=worker-wallet-consumer] Request joining group due to: consumer pro-actively leaving the group
+2024-12-18T10:39:20.383-03:00  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.apache.kafka.common.metrics.Metrics    : Metrics scheduler closed
+2024-12-18T10:39:20.383-03:00  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2024-12-18T10:39:20.384-03:00  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.telemetry.internals.ClientTelemetryReporter
+2024-12-18T10:39:20.384-03:00  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.apache.kafka.common.metrics.Metrics    : Metrics reporters closed
+2024-12-18T10:39:20.389-03:00  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.kafka.common.utils.AppInfoParser     : App info kafka.consumer for consumer-worker-wallet-consumer-1 unregistered
+2024-12-18T10:39:20.391-03:00  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : worker-wallet-consumer: Consumer stopped
+2024-12-18T10:39:20.393-03:00  INFO 1 --- [SpringApplicationShutdownHook] o.s.b.w.embedded.netty.GracefulShutdown  : Commencing graceful shutdown. Waiting for active requests to complete
+2024-12-18T10:39:20.396-03:00  INFO 1 --- [netty-shutdown] o.s.b.w.embedded.netty.GracefulShutdown  : Graceful shutdown complete
+2024-12-18T10:39:22.418-03:00  INFO 1 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-18T10:39:22.420-03:00  INFO 1 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-12-18T10:39:22.423-03:00  INFO 1 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-12-18T10:44:40.405-03:00  INFO 1 --- [main] c.r.c.a.WorkerWalletApplication          : Starting WorkerWalletApplication using Java 17-ea with PID 1 (/opt/app.jar started by root in /opt)
+2024-12-18T10:44:40.411-03:00  INFO 1 --- [main] c.r.c.a.WorkerWalletApplication          : No active profile set, falling back to 1 default profile: "default"
+2024-12-18T10:44:41.260-03:00  INFO 1 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-18T10:44:41.407-03:00  INFO 1 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 132 ms. Found 2 JPA repository interfaces.
+2024-12-18T10:44:42.685-03:00  INFO 1 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-18T10:44:42.863-03:00  INFO 1 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.2.Final
+2024-12-18T10:44:42.969-03:00  INFO 1 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-12-18T10:44:43.456-03:00  INFO 1 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-18T10:44:43.538-03:00  INFO 1 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-12-18T10:44:43.894-03:00  INFO 1 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1d7f2f0a
+2024-12-18T10:44:43.898-03:00  INFO 1 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-12-18T10:44:43.952-03:00  WARN 1 --- [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-12-18T10:44:43.990-03:00  INFO 1 --- [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2024-12-18T10:44:44.997-03:00  INFO 1 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-18T10:44:45.063-03:00  INFO 1 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-18T10:44:45.955-03:00  INFO 1 --- [main] c.r.code.assessment.config.JWKConf       : CHAVE PUBLICA: 
+ {"keys":[{"kid":"okfZrgncDopGSv6RWj4VBgm3dLCyhZO99IYxvvEGE4s","kty":"RSA","alg":"RS256","use":"sig","n":"uh5prVX4zOcpsgm3cJXdsFXOZsc9GFlsQoz_zosT-VsQHp3V0tzNvY9f1ZuOgI95OcZF-ArMWUYW25H8BNeunxU3MlUus9344KeJneca3bdQ2Uah_1lXe3FSw6LCcSL1_ifWVdnWWxAHIW-0x9LQxkp2UxXJyRqx8E9SFZ2SEdl6KoXUeUaGB5lV59NCjrRUNOB7LWibm5v-j1ESowkHL_kC2DekAq3zqEz7w__Honbg_Q4rZuYyJaXr39mBk0ntKhiiDKuZUKq9P6F2pUdE_3sPCyYgvF10FtzfmIXlStsZ-d9yN9Px8TgXSxytGBgzq0KQ0jkYb968IpPVZ9ADrw","e":"AQAB","x5c":["MIICuzCCAaMCBgGT2gNsmTANBgkqhkiG9w0BAQsFADAhMR8wHQYDVQQDDBZyZWNhcmdhcGF5X3dhbGxldF90ZXN0MB4XDTI0MTIxODEzNDI1N1oXDTM0MTIxODEzNDQzN1owITEfMB0GA1UEAwwWcmVjYXJnYXBheV93YWxsZXRfdGVzdDCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBALoeaa1V+MznKbIJt3CV3bBVzmbHPRhZbEKM/86LE/lbEB6d1dLczb2PX9WbjoCPeTnGRfgKzFlGFtuR/ATXrp8VNzJVLrPd+OCniZ3nGt23UNlGof9ZV3txUsOiwnEi9f4n1lXZ1lsQByFvtMfS0MZKdlMVyckasfBPUhWdkhHZeiqF1HlGhgeZVefTQo60VDTgey1om5ub/o9REqMJBy/5Atg3pAKt86hM+8P/x6J24P0OK2bmMiWl69/ZgZNJ7SoYogyrmVCqvT+hdqVHRP97DwsmILxddBbc35iF5UrbGfnfcjfT8fE4F0scrRgYM6tCkNI5GG/evCKT1WfQA68CAwEAATANBgkqhkiG9w0BAQsFAAOCAQEAkK4tNWV3XnO2KBOUluCQousS6N4+v1Gdyb2e9lvdgmzOfq9KrJi/kU+eQ02MAawlPxfQtCG+nYLLfR0B/tEy2MVQEUti8QI6G1WhBt7il4uHjfGEjUm2hoipQZnlXoxov+WJDK06iJkBqda4cWDphrVRu5dztmAz7Mv6eIlvXPtb/96eKRylEOpgp7n7l4W3PqG7tWMpakXJQXGM7a3XgAfBJY++DNv+cjZpDyVgUARNLEdlX5kbGyIT8Q+Gt5owZLZKyxu5j+mWSfM7PNjMNqNhU4OFAoaUnEge8NfDOzyGGhMSJKpGoz33VzkazstGRxiATfZ5BTV2nhYjipDDJw=="],"x5t":"myYP7GH8faJ7TPNbJum64KgEuHE","x5t#S256":"YDuQ5fw8d5lJku3zrTdjF6YWpfss3sQZY7mF6CD003Q"},{"kid":"j1vsiwNoqP5Hae2wMBbbcLUVVB78bi761EiDOz99PCw","kty":"RSA","alg":"RSA-OAEP","use":"enc","n":"z7DYBgHMQ16PMdpl26rswEciPnUrtJT82nJc4_NiGmPs3e0_ZxzKqeJU1tYmhITZcZH0N9VQxGir2c3Ewh7lFktRl85xbJRoSijELSkH1t4CltHcrXfTLtc-avC1ji7ZFQiKtYZeQab0jllOjM1sM96B1ajHqdvkE-j-Mw4Iestsc9S4hlKuAxMA-PK43pFVwRFDyzcPq-EFPEgbE-PPO9dAPizCh7Ka3rvlNh6o5QBKD0n0hSFPp07GGCAqtiym_8RPYrPCvAPkV2_gfMVsEhk0ODfbT1XPr1EOqW3o-Z4VINY0qA95GDSy61BhbKAGRCqqBBTGDDZvaMDsQtEDHw","e":"AQAB","x5c":["MIICuzCCAaMCBgGT2gNsQTANBgkqhkiG9w0BAQsFADAhMR8wHQYDVQQDDBZyZWNhcmdhcGF5X3dhbGxldF90ZXN0MB4XDTI0MTIxODEzNDI1N1oXDTM0MTIxODEzNDQzN1owITEfMB0GA1UEAwwWcmVjYXJnYXBheV93YWxsZXRfdGVzdDCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAM+w2AYBzENejzHaZduq7MBHIj51K7SU/NpyXOPzYhpj7N3tP2ccyqniVNbWJoSE2XGR9DfVUMRoq9nNxMIe5RZLUZfOcWyUaEooxC0pB9beApbR3K130y7XPmrwtY4u2RUIirWGXkGm9I5ZTozNbDPegdWox6nb5BPo/jMOCHrLbHPUuIZSrgMTAPjyuN6RVcERQ8s3D6vhBTxIGxPjzzvXQD4swoeymt675TYeqOUASg9J9IUhT6dOxhggKrYspv/ET2KzwrwD5Fdv4HzFbBIZNDg3209Vz69RDqlt6PmeFSDWNKgPeRg0sutQYWygBkQqqgQUxgw2b2jA7ELRAx8CAwEAATANBgkqhkiG9w0BAQsFAAOCAQEAR7m6bIXdt87Vpbgv316xPtTFB1EgOhCyjfAgiyeDldxcnALnVrqlc290g5jQ0GSZ8pGNR9Fvqn/rec+WraBKmj2rmKyc5gwce631poi6VsvUnH7AXdNqZ4A4ezjZ2U73UbWx7tQQIO9SX31d5T+rj5GKoTjq9EAPk5un0exBPeW/s7ptEWwIQUWffgCpwemOFKaQ/rwWHN47xgW9K2aG0Zck+wVSJO6AiYp7JzEel/BqoEncI73vMNl2y8JVtbQrqMof/P185mS8eowAoTaa89cbJ0AvYKX7pozTgsPH+tWpY0weVH8Tow/P7xrq5f2oCLGKOrH4/2qIdpRSoNg/NA=="],"x5t":"hoUj0QNhhtkSuDaaYPe5R6YL0ZE","x5t#S256":"HwrS46Qgrrr1DNwZLeEcs9zz2-7Vb-g5EP_MuCFl54M"}]}
+2024-12-18T10:44:46.562-03:00  INFO 1 --- [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-12-18T10:44:47.632-03:00  INFO 1 --- [main] c.r.c.assessment.audit.AuditLogAspect    : Audit Log - Iniciando execuÃ§Ã£o do mÃ©todo: String com.recargapay.code.assessment.JWKConfPort.jwkJsonPort(Builder)
+2024-12-18T10:44:47.634-03:00  INFO 1 --- [main] c.r.c.assessment.audit.AuditLogAspect    : ParÃ¢metros: org.springframework.web.reactive.function.client.DefaultWebClientBuilder@7158a28c
+2024-12-18T10:44:47.654-03:00  INFO 1 --- [main] c.r.c.assessment.audit.AuditLogAspect    : Audit Log - MÃ©todo concluÃ­do: String com.recargapay.code.assessment.JWKConfPort.jwkJsonPort(Builder)
+2024-12-18T10:44:47.656-03:00  INFO 1 --- [main] c.r.c.assessment.audit.AuditLogAspect    : Resultado: {"keys":[{"kid":"okfZrgncDopGSv6RWj4VBgm3dLCyhZO99IYxvvEGE4s","kty":"RSA","alg":"RS256","use":"sig","n":"uh5prVX4zOcpsgm3cJXdsFXOZsc9GFlsQoz_zosT-VsQHp3V0tzNvY9f1ZuOgI95OcZF-ArMWUYW25H8BNeunxU3MlUus9344KeJneca3bdQ2Uah_1lXe3FSw6LCcSL1_ifWVdnWWxAHIW-0x9LQxkp2UxXJyRqx8E9SFZ2SEdl6KoXUeUaGB5lV59NCjrRUNOB7LWibm5v-j1ESowkHL_kC2DekAq3zqEz7w__Honbg_Q4rZuYyJaXr39mBk0ntKhiiDKuZUKq9P6F2pUdE_3sPCyYgvF10FtzfmIXlStsZ-d9yN9Px8TgXSxytGBgzq0KQ0jkYb968IpPVZ9ADrw","e":"AQAB","x5c":["MIICuzCCAaMCBgGT2gNsmTANBgkqhkiG9w0BAQsFADAhMR8wHQYDVQQDDBZyZWNhcmdhcGF5X3dhbGxldF90ZXN0MB4XDTI0MTIxODEzNDI1N1oXDTM0MTIxODEzNDQzN1owITEfMB0GA1UEAwwWcmVjYXJnYXBheV93YWxsZXRfdGVzdDCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBALoeaa1V+MznKbIJt3CV3bBVzmbHPRhZbEKM/86LE/lbEB6d1dLczb2PX9WbjoCPeTnGRfgKzFlGFtuR/ATXrp8VNzJVLrPd+OCniZ3nGt23UNlGof9ZV3txUsOiwnEi9f4n1lXZ1lsQByFvtMfS0MZKdlMVyckasfBPUhWdkhHZeiqF1HlGhgeZVefTQo60VDTgey1om5ub/o9REqMJBy/5Atg3pAKt86hM+8P/x6J24P0OK2bmMiWl69/ZgZNJ7SoYogyrmVCqvT+hdqVHRP97DwsmILxddBbc35iF5UrbGfnfcjfT8fE4F0scrRgYM6tCkNI5GG/evCKT1WfQA68CAwEAATANBgkqhkiG9w0BAQsFAAOCAQEAkK4tNWV3XnO2KBOUluCQousS6N4+v1Gdyb2e9lvdgmzOfq9KrJi/kU+eQ02MAawlPxfQtCG+nYLLfR0B/tEy2MVQEUti8QI6G1WhBt7il4uHjfGEjUm2hoipQZnlXoxov+WJDK06iJkBqda4cWDphrVRu5dztmAz7Mv6eIlvXPtb/96eKRylEOpgp7n7l4W3PqG7tWMpakXJQXGM7a3XgAfBJY++DNv+cjZpDyVgUARNLEdlX5kbGyIT8Q+Gt5owZLZKyxu5j+mWSfM7PNjMNqNhU4OFAoaUnEge8NfDOzyGGhMSJKpGoz33VzkazstGRxiATfZ5BTV2nhYjipDDJw=="],"x5t":"myYP7GH8faJ7TPNbJum64KgEuHE","x5t#S256":"YDuQ5fw8d5lJku3zrTdjF6YWpfss3sQZY7mF6CD003Q"},{"kid":"j1vsiwNoqP5Hae2wMBbbcLUVVB78bi761EiDOz99PCw","kty":"RSA","alg":"RSA-OAEP","use":"enc","n":"z7DYBgHMQ16PMdpl26rswEciPnUrtJT82nJc4_NiGmPs3e0_ZxzKqeJU1tYmhITZcZH0N9VQxGir2c3Ewh7lFktRl85xbJRoSijELSkH1t4CltHcrXfTLtc-avC1ji7ZFQiKtYZeQab0jllOjM1sM96B1ajHqdvkE-j-Mw4Iestsc9S4hlKuAxMA-PK43pFVwRFDyzcPq-EFPEgbE-PPO9dAPizCh7Ka3rvlNh6o5QBKD0n0hSFPp07GGCAqtiym_8RPYrPCvAPkV2_gfMVsEhk0ODfbT1XPr1EOqW3o-Z4VINY0qA95GDSy61BhbKAGRCqqBBTGDDZvaMDsQtEDHw","e":"AQAB","x5c":["MIICuzCCAaMCBgGT2gNsQTANBgkqhkiG9w0BAQsFADAhMR8wHQYDVQQDDBZyZWNhcmdhcGF5X3dhbGxldF90ZXN0MB4XDTI0MTIxODEzNDI1N1oXDTM0MTIxODEzNDQzN1owITEfMB0GA1UEAwwWcmVjYXJnYXBheV93YWxsZXRfdGVzdDCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAM+w2AYBzENejzHaZduq7MBHIj51K7SU/NpyXOPzYhpj7N3tP2ccyqniVNbWJoSE2XGR9DfVUMRoq9nNxMIe5RZLUZfOcWyUaEooxC0pB9beApbR3K130y7XPmrwtY4u2RUIirWGXkGm9I5ZTozNbDPegdWox6nb5BPo/jMOCHrLbHPUuIZSrgMTAPjyuN6RVcERQ8s3D6vhBTxIGxPjzzvXQD4swoeymt675TYeqOUASg9J9IUhT6dOxhggKrYspv/ET2KzwrwD5Fdv4HzFbBIZNDg3209Vz69RDqlt6PmeFSDWNKgPeRg0sutQYWygBkQqqgQUxgw2b2jA7ELRAx8CAwEAATANBgkqhkiG9w0BAQsFAAOCAQEAR7m6bIXdt87Vpbgv316xPtTFB1EgOhCyjfAgiyeDldxcnALnVrqlc290g5jQ0GSZ8pGNR9Fvqn/rec+WraBKmj2rmKyc5gwce631poi6VsvUnH7AXdNqZ4A4ezjZ2U73UbWx7tQQIO9SX31d5T+rj5GKoTjq9EAPk5un0exBPeW/s7ptEWwIQUWffgCpwemOFKaQ/rwWHN47xgW9K2aG0Zck+wVSJO6AiYp7JzEel/BqoEncI73vMNl2y8JVtbQrqMof/P185mS8eowAoTaa89cbJ0AvYKX7pozTgsPH+tWpY0weVH8Tow/P7xrq5f2oCLGKOrH4/2qIdpRSoNg/NA=="],"x5t":"hoUj0QNhhtkSuDaaYPe5R6YL0ZE","x5t#S256":"HwrS46Qgrrr1DNwZLeEcs9zz2-7Vb-g5EP_MuCFl54M"}]}
+2024-12-18T10:44:48.790-03:00  INFO 1 --- [main] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port 8085 (http)
+2024-12-18T10:44:48.851-03:00  INFO 1 --- [main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 1000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = earliest
+	bootstrap.servers = [kafka:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-worker-wallet-consumer-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	enable.metrics.push = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = worker-wallet-consumer
+	group.instance.id = null
+	group.protocol = classic
+	group.remote.assignor = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class io.confluent.kafka.serializers.KafkaAvroDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metadata.recovery.strategy = none
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class io.confluent.kafka.serializers.KafkaAvroDeserializer
+
+2024-12-18T10:44:48.919-03:00  INFO 1 --- [main] o.a.k.c.t.i.KafkaMetricsCollector        : initializing Kafka metrics collector
+2024-12-18T10:44:49.024-03:00  INFO 1 --- [main] i.c.k.s.KafkaAvroDeserializerConfig      : KafkaAvroDeserializerConfig values: 
+	auto.register.schemas = true
+	avro.reflection.allow.null = false
+	avro.use.logical.type.converters = false
+	basic.auth.credentials.source = URL
+	basic.auth.user.info = [hidden]
+	bearer.auth.cache.expiry.buffer.seconds = 300
+	bearer.auth.client.id = null
+	bearer.auth.client.secret = null
+	bearer.auth.credentials.source = STATIC_TOKEN
+	bearer.auth.custom.provider.class = null
+	bearer.auth.identity.pool.id = null
+	bearer.auth.issuer.endpoint.url = null
+	bearer.auth.logical.cluster = null
+	bearer.auth.scope = null
+	bearer.auth.scope.claim.name = scope
+	bearer.auth.sub.claim.name = sub
+	bearer.auth.token = [hidden]
+	context.name.strategy = class io.confluent.kafka.serializers.context.NullContextNameStrategy
+	http.connect.timeout.ms = 60000
+	http.read.timeout.ms = 60000
+	id.compatibility.strict = true
+	key.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+	latest.cache.size = 1000
+	latest.cache.ttl.sec = -1
+	latest.compatibility.strict = true
+	max.schemas.per.subject = 1000
+	normalize.schemas = false
+	propagate.schema.tags = false
+	proxy.host = 
+	proxy.port = -1
+	rule.actions = []
+	rule.executors = []
+	rule.service.loader.enable = true
+	schema.format = null
+	schema.reflection = false
+	schema.registry.basic.auth.user.info = [hidden]
+	schema.registry.ssl.cipher.suites = null
+	schema.registry.ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	schema.registry.ssl.endpoint.identification.algorithm = https
+	schema.registry.ssl.engine.factory.class = null
+	schema.registry.ssl.key.password = null
+	schema.registry.ssl.keymanager.algorithm = SunX509
+	schema.registry.ssl.keystore.certificate.chain = null
+	schema.registry.ssl.keystore.key = null
+	schema.registry.ssl.keystore.location = null
+	schema.registry.ssl.keystore.password = null
+	schema.registry.ssl.keystore.type = JKS
+	schema.registry.ssl.protocol = TLSv1.3
+	schema.registry.ssl.provider = null
+	schema.registry.ssl.secure.random.implementation = null
+	schema.registry.ssl.trustmanager.algorithm = PKIX
+	schema.registry.ssl.truststore.certificates = null
+	schema.registry.ssl.truststore.location = null
+	schema.registry.ssl.truststore.password = null
+	schema.registry.ssl.truststore.type = JKS
+	schema.registry.url = [http://schema-registry:8081]
+	specific.avro.key.type = null
+	specific.avro.reader = true
+	specific.avro.value.type = null
+	use.latest.version = false
+	use.latest.with.metadata = null
+	use.schema.id = -1
+	value.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+
+2024-12-18T10:44:49.025-03:00  INFO 1 --- [main] i.c.k.s.KafkaAvroDeserializerConfig      : KafkaAvroDeserializerConfig values: 
+	auto.register.schemas = true
+	avro.reflection.allow.null = false
+	avro.use.logical.type.converters = false
+	basic.auth.credentials.source = URL
+	basic.auth.user.info = [hidden]
+	bearer.auth.cache.expiry.buffer.seconds = 300
+	bearer.auth.client.id = null
+	bearer.auth.client.secret = null
+	bearer.auth.credentials.source = STATIC_TOKEN
+	bearer.auth.custom.provider.class = null
+	bearer.auth.identity.pool.id = null
+	bearer.auth.issuer.endpoint.url = null
+	bearer.auth.logical.cluster = null
+	bearer.auth.scope = null
+	bearer.auth.scope.claim.name = scope
+	bearer.auth.sub.claim.name = sub
+	bearer.auth.token = [hidden]
+	context.name.strategy = class io.confluent.kafka.serializers.context.NullContextNameStrategy
+	http.connect.timeout.ms = 60000
+	http.read.timeout.ms = 60000
+	id.compatibility.strict = true
+	key.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+	latest.cache.size = 1000
+	latest.cache.ttl.sec = -1
+	latest.compatibility.strict = true
+	max.schemas.per.subject = 1000
+	normalize.schemas = false
+	propagate.schema.tags = false
+	proxy.host = 
+	proxy.port = -1
+	rule.actions = []
+	rule.executors = []
+	rule.service.loader.enable = true
+	schema.format = null
+	schema.reflection = false
+	schema.registry.basic.auth.user.info = [hidden]
+	schema.registry.ssl.cipher.suites = null
+	schema.registry.ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	schema.registry.ssl.endpoint.identification.algorithm = https
+	schema.registry.ssl.engine.factory.class = null
+	schema.registry.ssl.key.password = null
+	schema.registry.ssl.keymanager.algorithm = SunX509
+	schema.registry.ssl.keystore.certificate.chain = null
+	schema.registry.ssl.keystore.key = null
+	schema.registry.ssl.keystore.location = null
+	schema.registry.ssl.keystore.password = null
+	schema.registry.ssl.keystore.type = JKS
+	schema.registry.ssl.protocol = TLSv1.3
+	schema.registry.ssl.provider = null
+	schema.registry.ssl.secure.random.implementation = null
+	schema.registry.ssl.trustmanager.algorithm = PKIX
+	schema.registry.ssl.truststore.certificates = null
+	schema.registry.ssl.truststore.location = null
+	schema.registry.ssl.truststore.password = null
+	schema.registry.ssl.truststore.type = JKS
+	schema.registry.url = [http://schema-registry:8081]
+	specific.avro.key.type = null
+	specific.avro.reader = true
+	specific.avro.value.type = null
+	use.latest.version = false
+	use.latest.with.metadata = null
+	use.schema.id = -1
+	value.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+
+2024-12-18T10:44:49.129-03:00  INFO 1 --- [main] i.c.k.s.KafkaAvroDeserializerConfig      : KafkaAvroDeserializerConfig values: 
+	auto.register.schemas = true
+	avro.reflection.allow.null = false
+	avro.use.logical.type.converters = false
+	basic.auth.credentials.source = URL
+	basic.auth.user.info = [hidden]
+	bearer.auth.cache.expiry.buffer.seconds = 300
+	bearer.auth.client.id = null
+	bearer.auth.client.secret = null
+	bearer.auth.credentials.source = STATIC_TOKEN
+	bearer.auth.custom.provider.class = null
+	bearer.auth.identity.pool.id = null
+	bearer.auth.issuer.endpoint.url = null
+	bearer.auth.logical.cluster = null
+	bearer.auth.scope = null
+	bearer.auth.scope.claim.name = scope
+	bearer.auth.sub.claim.name = sub
+	bearer.auth.token = [hidden]
+	context.name.strategy = class io.confluent.kafka.serializers.context.NullContextNameStrategy
+	http.connect.timeout.ms = 60000
+	http.read.timeout.ms = 60000
+	id.compatibility.strict = true
+	key.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+	latest.cache.size = 1000
+	latest.cache.ttl.sec = -1
+	latest.compatibility.strict = true
+	max.schemas.per.subject = 1000
+	normalize.schemas = false
+	propagate.schema.tags = false
+	proxy.host = 
+	proxy.port = -1
+	rule.actions = []
+	rule.executors = []
+	rule.service.loader.enable = true
+	schema.format = null
+	schema.reflection = false
+	schema.registry.basic.auth.user.info = [hidden]
+	schema.registry.ssl.cipher.suites = null
+	schema.registry.ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	schema.registry.ssl.endpoint.identification.algorithm = https
+	schema.registry.ssl.engine.factory.class = null
+	schema.registry.ssl.key.password = null
+	schema.registry.ssl.keymanager.algorithm = SunX509
+	schema.registry.ssl.keystore.certificate.chain = null
+	schema.registry.ssl.keystore.key = null
+	schema.registry.ssl.keystore.location = null
+	schema.registry.ssl.keystore.password = null
+	schema.registry.ssl.keystore.type = JKS
+	schema.registry.ssl.protocol = TLSv1.3
+	schema.registry.ssl.provider = null
+	schema.registry.ssl.secure.random.implementation = null
+	schema.registry.ssl.trustmanager.algorithm = PKIX
+	schema.registry.ssl.truststore.certificates = null
+	schema.registry.ssl.truststore.location = null
+	schema.registry.ssl.truststore.password = null
+	schema.registry.ssl.truststore.type = JKS
+	schema.registry.url = [http://schema-registry:8081]
+	specific.avro.key.type = null
+	specific.avro.reader = true
+	specific.avro.value.type = null
+	use.latest.version = false
+	use.latest.with.metadata = null
+	use.schema.id = -1
+	value.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+
+2024-12-18T10:44:49.130-03:00  INFO 1 --- [main] i.c.k.s.KafkaAvroDeserializerConfig      : KafkaAvroDeserializerConfig values: 
+	auto.register.schemas = true
+	avro.reflection.allow.null = false
+	avro.use.logical.type.converters = false
+	basic.auth.credentials.source = URL
+	basic.auth.user.info = [hidden]
+	bearer.auth.cache.expiry.buffer.seconds = 300
+	bearer.auth.client.id = null
+	bearer.auth.client.secret = null
+	bearer.auth.credentials.source = STATIC_TOKEN
+	bearer.auth.custom.provider.class = null
+	bearer.auth.identity.pool.id = null
+	bearer.auth.issuer.endpoint.url = null
+	bearer.auth.logical.cluster = null
+	bearer.auth.scope = null
+	bearer.auth.scope.claim.name = scope
+	bearer.auth.sub.claim.name = sub
+	bearer.auth.token = [hidden]
+	context.name.strategy = class io.confluent.kafka.serializers.context.NullContextNameStrategy
+	http.connect.timeout.ms = 60000
+	http.read.timeout.ms = 60000
+	id.compatibility.strict = true
+	key.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+	latest.cache.size = 1000
+	latest.cache.ttl.sec = -1
+	latest.compatibility.strict = true
+	max.schemas.per.subject = 1000
+	normalize.schemas = false
+	propagate.schema.tags = false
+	proxy.host = 
+	proxy.port = -1
+	rule.actions = []
+	rule.executors = []
+	rule.service.loader.enable = true
+	schema.format = null
+	schema.reflection = false
+	schema.registry.basic.auth.user.info = [hidden]
+	schema.registry.ssl.cipher.suites = null
+	schema.registry.ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	schema.registry.ssl.endpoint.identification.algorithm = https
+	schema.registry.ssl.engine.factory.class = null
+	schema.registry.ssl.key.password = null
+	schema.registry.ssl.keymanager.algorithm = SunX509
+	schema.registry.ssl.keystore.certificate.chain = null
+	schema.registry.ssl.keystore.key = null
+	schema.registry.ssl.keystore.location = null
+	schema.registry.ssl.keystore.password = null
+	schema.registry.ssl.keystore.type = JKS
+	schema.registry.ssl.protocol = TLSv1.3
+	schema.registry.ssl.provider = null
+	schema.registry.ssl.secure.random.implementation = null
+	schema.registry.ssl.trustmanager.algorithm = PKIX
+	schema.registry.ssl.truststore.certificates = null
+	schema.registry.ssl.truststore.location = null
+	schema.registry.ssl.truststore.password = null
+	schema.registry.ssl.truststore.type = JKS
+	schema.registry.url = [http://schema-registry:8081]
+	specific.avro.key.type = null
+	specific.avro.reader = true
+	specific.avro.value.type = null
+	use.latest.version = false
+	use.latest.with.metadata = null
+	use.schema.id = -1
+	value.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+
+2024-12-18T10:44:52.886-03:00  WARN 1 --- [main] org.apache.kafka.clients.ClientUtils     : Couldn't resolve server kafka:9092 from bootstrap.servers as DNS resolution failed for kafka
+2024-12-18T10:44:52.887-03:00  INFO 1 --- [main] o.apache.kafka.common.metrics.Metrics    : Metrics scheduler closed
+2024-12-18T10:44:52.887-03:00  INFO 1 --- [main] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2024-12-18T10:44:52.888-03:00  INFO 1 --- [main] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.telemetry.internals.ClientTelemetryReporter
+2024-12-18T10:44:52.888-03:00  INFO 1 --- [main] o.apache.kafka.common.metrics.Metrics    : Metrics reporters closed
+2024-12-18T10:44:52.889-03:00  INFO 1 --- [main] o.a.kafka.common.utils.AppInfoParser     : App info kafka.consumer for consumer-worker-wallet-consumer-1 unregistered
+2024-12-18T10:44:52.891-03:00  INFO 1 --- [main] o.s.b.w.embedded.netty.GracefulShutdown  : Commencing graceful shutdown. Waiting for active requests to complete
+2024-12-18T10:44:52.894-03:00  INFO 1 --- [netty-shutdown] o.s.b.w.embedded.netty.GracefulShutdown  : Graceful shutdown complete
+2024-12-18T10:44:54.914-03:00  WARN 1 --- [main] onfigReactiveWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'org.springframework.kafka.config.internalKafkaListenerEndpointRegistry'
+2024-12-18T10:44:54.922-03:00  INFO 1 --- [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-18T10:44:54.927-03:00  INFO 1 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-12-18T10:44:54.932-03:00  INFO 1 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-12-18T10:44:54.945-03:00  INFO 1 --- [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-12-18T10:44:54.966-03:00 ERROR 1 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.context.ApplicationContextException: Failed to start bean 'org.springframework.kafka.config.internalKafkaListenerEndpointRegistry'
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:326) ~[spring-context-6.2.0.jar!/:6.2.0]
+	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:510) ~[spring-context-6.2.0.jar!/:6.2.0]
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75) ~[na:na]
+	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:295) ~[spring-context-6.2.0.jar!/:6.2.0]
+	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:240) ~[spring-context-6.2.0.jar!/:6.2.0]
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:1006) ~[spring-context-6.2.0.jar!/:6.2.0]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:630) ~[spring-context-6.2.0.jar!/:6.2.0]
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.refresh(ReactiveWebServerApplicationContext.java:66) ~[spring-boot-3.4.0.jar!/:3.4.0]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) ~[spring-boot-3.4.0.jar!/:3.4.0]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.4.0.jar!/:3.4.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.4.0.jar!/:3.4.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) ~[spring-boot-3.4.0.jar!/:3.4.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) ~[spring-boot-3.4.0.jar!/:3.4.0]
+	at com.recargapay.code.assessment.WorkerWalletApplication.main(WorkerWalletApplication.java:10) ~[!/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.boot.loader.launch.Launcher.launch(Launcher.java:102) ~[app.jar:na]
+	at org.springframework.boot.loader.launch.Launcher.launch(Launcher.java:64) ~[app.jar:na]
+	at org.springframework.boot.loader.launch.JarLauncher.main(JarLauncher.java:40) ~[app.jar:na]
+Caused by: org.apache.kafka.common.KafkaException: Failed to construct kafka consumer
+	at org.apache.kafka.clients.consumer.internals.LegacyKafkaConsumer.<init>(LegacyKafkaConsumer.java:265) ~[kafka-clients-3.8.1.jar!/:na]
+	at org.apache.kafka.clients.consumer.internals.ConsumerDelegateCreator.create(ConsumerDelegateCreator.java:65) ~[kafka-clients-3.8.1.jar!/:na]
+	at org.apache.kafka.clients.consumer.KafkaConsumer.<init>(KafkaConsumer.java:600) ~[kafka-clients-3.8.1.jar!/:na]
+	at org.apache.kafka.clients.consumer.KafkaConsumer.<init>(KafkaConsumer.java:595) ~[kafka-clients-3.8.1.jar!/:na]
+	at org.springframework.kafka.core.DefaultKafkaConsumerFactory$ExtendedKafkaConsumer.<init>(DefaultKafkaConsumerFactory.java:498) ~[spring-kafka-3.3.0.jar!/:3.3.0]
+	at org.springframework.kafka.core.DefaultKafkaConsumerFactory.createRawConsumer(DefaultKafkaConsumerFactory.java:453) ~[spring-kafka-3.3.0.jar!/:3.3.0]
+	at org.springframework.kafka.core.DefaultKafkaConsumerFactory.createKafkaConsumer(DefaultKafkaConsumerFactory.java:430) ~[spring-kafka-3.3.0.jar!/:3.3.0]
+	at org.springframework.kafka.core.DefaultKafkaConsumerFactory.createConsumerWithAdjustedProperties(DefaultKafkaConsumerFactory.java:407) ~[spring-kafka-3.3.0.jar!/:3.3.0]
+	at org.springframework.kafka.core.DefaultKafkaConsumerFactory.createKafkaConsumer(DefaultKafkaConsumerFactory.java:374) ~[spring-kafka-3.3.0.jar!/:3.3.0]
+	at org.springframework.kafka.core.DefaultKafkaConsumerFactory.createConsumer(DefaultKafkaConsumerFactory.java:335) ~[spring-kafka-3.3.0.jar!/:3.3.0]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.<init>(KafkaMessageListenerContainer.java:874) ~[spring-kafka-3.3.0.jar!/:3.3.0]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer.doStart(KafkaMessageListenerContainer.java:385) ~[spring-kafka-3.3.0.jar!/:3.3.0]
+	at org.springframework.kafka.listener.AbstractMessageListenerContainer.start(AbstractMessageListenerContainer.java:520) ~[spring-kafka-3.3.0.jar!/:3.3.0]
+	at org.springframework.kafka.listener.ConcurrentMessageListenerContainer.doStart(ConcurrentMessageListenerContainer.java:264) ~[spring-kafka-3.3.0.jar!/:3.3.0]
+	at org.springframework.kafka.listener.AbstractMessageListenerContainer.start(AbstractMessageListenerContainer.java:520) ~[spring-kafka-3.3.0.jar!/:3.3.0]
+	at org.springframework.kafka.config.KafkaListenerEndpointRegistry.startIfNecessary(KafkaListenerEndpointRegistry.java:436) ~[spring-kafka-3.3.0.jar!/:3.3.0]
+	at org.springframework.kafka.config.KafkaListenerEndpointRegistry.start(KafkaListenerEndpointRegistry.java:382) ~[spring-kafka-3.3.0.jar!/:3.3.0]
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:323) ~[spring-context-6.2.0.jar!/:6.2.0]
+	... 20 common frames omitted
+Caused by: org.apache.kafka.common.config.ConfigException: No resolvable bootstrap urls given in bootstrap.servers
+	at org.apache.kafka.clients.ClientUtils.parseAndValidateAddresses(ClientUtils.java:103) ~[kafka-clients-3.8.1.jar!/:na]
+	at org.apache.kafka.clients.ClientUtils.parseAndValidateAddresses(ClientUtils.java:62) ~[kafka-clients-3.8.1.jar!/:na]
+	at org.apache.kafka.clients.ClientUtils.parseAndValidateAddresses(ClientUtils.java:58) ~[kafka-clients-3.8.1.jar!/:na]
+	at org.apache.kafka.clients.consumer.internals.LegacyKafkaConsumer.<init>(LegacyKafkaConsumer.java:184) ~[kafka-clients-3.8.1.jar!/:na]
+	... 37 common frames omitted
+
+2024-12-18T10:49:06.322-03:00  INFO 1 --- [main] c.r.c.a.WorkerWalletApplication          : Starting WorkerWalletApplication using Java 17-ea with PID 1 (/opt/app.jar started by root in /opt)
+2024-12-18T10:49:06.331-03:00  INFO 1 --- [main] c.r.c.a.WorkerWalletApplication          : No active profile set, falling back to 1 default profile: "default"
+2024-12-18T10:49:07.636-03:00  INFO 1 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-18T10:49:07.882-03:00  INFO 1 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 212 ms. Found 2 JPA repository interfaces.
+2024-12-18T10:49:09.530-03:00  INFO 1 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-18T10:49:09.741-03:00  INFO 1 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.2.Final
+2024-12-18T10:49:09.877-03:00  INFO 1 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-12-18T10:49:10.632-03:00  INFO 1 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-18T10:49:10.728-03:00  INFO 1 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-12-18T10:49:11.114-03:00  INFO 1 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@38a38ed4
+2024-12-18T10:49:11.119-03:00  INFO 1 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-12-18T10:49:11.160-03:00  WARN 1 --- [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-12-18T10:49:11.203-03:00  INFO 1 --- [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2024-12-18T10:49:12.681-03:00  INFO 1 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-18T10:49:12.732-03:00  INFO 1 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-18T10:49:13.829-03:00  INFO 1 --- [main] c.r.code.assessment.config.JWKConf       : CHAVE PUBLICA: 
+ {"keys":[{"kid":"okfZrgncDopGSv6RWj4VBgm3dLCyhZO99IYxvvEGE4s","kty":"RSA","alg":"RS256","use":"sig","n":"uh5prVX4zOcpsgm3cJXdsFXOZsc9GFlsQoz_zosT-VsQHp3V0tzNvY9f1ZuOgI95OcZF-ArMWUYW25H8BNeunxU3MlUus9344KeJneca3bdQ2Uah_1lXe3FSw6LCcSL1_ifWVdnWWxAHIW-0x9LQxkp2UxXJyRqx8E9SFZ2SEdl6KoXUeUaGB5lV59NCjrRUNOB7LWibm5v-j1ESowkHL_kC2DekAq3zqEz7w__Honbg_Q4rZuYyJaXr39mBk0ntKhiiDKuZUKq9P6F2pUdE_3sPCyYgvF10FtzfmIXlStsZ-d9yN9Px8TgXSxytGBgzq0KQ0jkYb968IpPVZ9ADrw","e":"AQAB","x5c":["MIICuzCCAaMCBgGT2gNsmTANBgkqhkiG9w0BAQsFADAhMR8wHQYDVQQDDBZyZWNhcmdhcGF5X3dhbGxldF90ZXN0MB4XDTI0MTIxODEzNDI1N1oXDTM0MTIxODEzNDQzN1owITEfMB0GA1UEAwwWcmVjYXJnYXBheV93YWxsZXRfdGVzdDCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBALoeaa1V+MznKbIJt3CV3bBVzmbHPRhZbEKM/86LE/lbEB6d1dLczb2PX9WbjoCPeTnGRfgKzFlGFtuR/ATXrp8VNzJVLrPd+OCniZ3nGt23UNlGof9ZV3txUsOiwnEi9f4n1lXZ1lsQByFvtMfS0MZKdlMVyckasfBPUhWdkhHZeiqF1HlGhgeZVefTQo60VDTgey1om5ub/o9REqMJBy/5Atg3pAKt86hM+8P/x6J24P0OK2bmMiWl69/ZgZNJ7SoYogyrmVCqvT+hdqVHRP97DwsmILxddBbc35iF5UrbGfnfcjfT8fE4F0scrRgYM6tCkNI5GG/evCKT1WfQA68CAwEAATANBgkqhkiG9w0BAQsFAAOCAQEAkK4tNWV3XnO2KBOUluCQousS6N4+v1Gdyb2e9lvdgmzOfq9KrJi/kU+eQ02MAawlPxfQtCG+nYLLfR0B/tEy2MVQEUti8QI6G1WhBt7il4uHjfGEjUm2hoipQZnlXoxov+WJDK06iJkBqda4cWDphrVRu5dztmAz7Mv6eIlvXPtb/96eKRylEOpgp7n7l4W3PqG7tWMpakXJQXGM7a3XgAfBJY++DNv+cjZpDyVgUARNLEdlX5kbGyIT8Q+Gt5owZLZKyxu5j+mWSfM7PNjMNqNhU4OFAoaUnEge8NfDOzyGGhMSJKpGoz33VzkazstGRxiATfZ5BTV2nhYjipDDJw=="],"x5t":"myYP7GH8faJ7TPNbJum64KgEuHE","x5t#S256":"YDuQ5fw8d5lJku3zrTdjF6YWpfss3sQZY7mF6CD003Q"},{"kid":"j1vsiwNoqP5Hae2wMBbbcLUVVB78bi761EiDOz99PCw","kty":"RSA","alg":"RSA-OAEP","use":"enc","n":"z7DYBgHMQ16PMdpl26rswEciPnUrtJT82nJc4_NiGmPs3e0_ZxzKqeJU1tYmhITZcZH0N9VQxGir2c3Ewh7lFktRl85xbJRoSijELSkH1t4CltHcrXfTLtc-avC1ji7ZFQiKtYZeQab0jllOjM1sM96B1ajHqdvkE-j-Mw4Iestsc9S4hlKuAxMA-PK43pFVwRFDyzcPq-EFPEgbE-PPO9dAPizCh7Ka3rvlNh6o5QBKD0n0hSFPp07GGCAqtiym_8RPYrPCvAPkV2_gfMVsEhk0ODfbT1XPr1EOqW3o-Z4VINY0qA95GDSy61BhbKAGRCqqBBTGDDZvaMDsQtEDHw","e":"AQAB","x5c":["MIICuzCCAaMCBgGT2gNsQTANBgkqhkiG9w0BAQsFADAhMR8wHQYDVQQDDBZyZWNhcmdhcGF5X3dhbGxldF90ZXN0MB4XDTI0MTIxODEzNDI1N1oXDTM0MTIxODEzNDQzN1owITEfMB0GA1UEAwwWcmVjYXJnYXBheV93YWxsZXRfdGVzdDCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAM+w2AYBzENejzHaZduq7MBHIj51K7SU/NpyXOPzYhpj7N3tP2ccyqniVNbWJoSE2XGR9DfVUMRoq9nNxMIe5RZLUZfOcWyUaEooxC0pB9beApbR3K130y7XPmrwtY4u2RUIirWGXkGm9I5ZTozNbDPegdWox6nb5BPo/jMOCHrLbHPUuIZSrgMTAPjyuN6RVcERQ8s3D6vhBTxIGxPjzzvXQD4swoeymt675TYeqOUASg9J9IUhT6dOxhggKrYspv/ET2KzwrwD5Fdv4HzFbBIZNDg3209Vz69RDqlt6PmeFSDWNKgPeRg0sutQYWygBkQqqgQUxgw2b2jA7ELRAx8CAwEAATANBgkqhkiG9w0BAQsFAAOCAQEAR7m6bIXdt87Vpbgv316xPtTFB1EgOhCyjfAgiyeDldxcnALnVrqlc290g5jQ0GSZ8pGNR9Fvqn/rec+WraBKmj2rmKyc5gwce631poi6VsvUnH7AXdNqZ4A4ezjZ2U73UbWx7tQQIO9SX31d5T+rj5GKoTjq9EAPk5un0exBPeW/s7ptEWwIQUWffgCpwemOFKaQ/rwWHN47xgW9K2aG0Zck+wVSJO6AiYp7JzEel/BqoEncI73vMNl2y8JVtbQrqMof/P185mS8eowAoTaa89cbJ0AvYKX7pozTgsPH+tWpY0weVH8Tow/P7xrq5f2oCLGKOrH4/2qIdpRSoNg/NA=="],"x5t":"hoUj0QNhhtkSuDaaYPe5R6YL0ZE","x5t#S256":"HwrS46Qgrrr1DNwZLeEcs9zz2-7Vb-g5EP_MuCFl54M"}]}
+2024-12-18T10:49:14.551-03:00  INFO 1 --- [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-12-18T10:49:15.889-03:00  INFO 1 --- [main] c.r.c.assessment.audit.AuditLogAspect    : Audit Log - Iniciando execuÃ§Ã£o do mÃ©todo: String com.recargapay.code.assessment.JWKConfPort.jwkJsonPort(Builder)
+2024-12-18T10:49:15.890-03:00  INFO 1 --- [main] c.r.c.assessment.audit.AuditLogAspect    : ParÃ¢metros: org.springframework.web.reactive.function.client.DefaultWebClientBuilder@7431f4b8
+2024-12-18T10:49:15.908-03:00  INFO 1 --- [main] c.r.c.assessment.audit.AuditLogAspect    : Audit Log - MÃ©todo concluÃ­do: String com.recargapay.code.assessment.JWKConfPort.jwkJsonPort(Builder)
+2024-12-18T10:49:15.909-03:00  INFO 1 --- [main] c.r.c.assessment.audit.AuditLogAspect    : Resultado: {"keys":[{"kid":"okfZrgncDopGSv6RWj4VBgm3dLCyhZO99IYxvvEGE4s","kty":"RSA","alg":"RS256","use":"sig","n":"uh5prVX4zOcpsgm3cJXdsFXOZsc9GFlsQoz_zosT-VsQHp3V0tzNvY9f1ZuOgI95OcZF-ArMWUYW25H8BNeunxU3MlUus9344KeJneca3bdQ2Uah_1lXe3FSw6LCcSL1_ifWVdnWWxAHIW-0x9LQxkp2UxXJyRqx8E9SFZ2SEdl6KoXUeUaGB5lV59NCjrRUNOB7LWibm5v-j1ESowkHL_kC2DekAq3zqEz7w__Honbg_Q4rZuYyJaXr39mBk0ntKhiiDKuZUKq9P6F2pUdE_3sPCyYgvF10FtzfmIXlStsZ-d9yN9Px8TgXSxytGBgzq0KQ0jkYb968IpPVZ9ADrw","e":"AQAB","x5c":["MIICuzCCAaMCBgGT2gNsmTANBgkqhkiG9w0BAQsFADAhMR8wHQYDVQQDDBZyZWNhcmdhcGF5X3dhbGxldF90ZXN0MB4XDTI0MTIxODEzNDI1N1oXDTM0MTIxODEzNDQzN1owITEfMB0GA1UEAwwWcmVjYXJnYXBheV93YWxsZXRfdGVzdDCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBALoeaa1V+MznKbIJt3CV3bBVzmbHPRhZbEKM/86LE/lbEB6d1dLczb2PX9WbjoCPeTnGRfgKzFlGFtuR/ATXrp8VNzJVLrPd+OCniZ3nGt23UNlGof9ZV3txUsOiwnEi9f4n1lXZ1lsQByFvtMfS0MZKdlMVyckasfBPUhWdkhHZeiqF1HlGhgeZVefTQo60VDTgey1om5ub/o9REqMJBy/5Atg3pAKt86hM+8P/x6J24P0OK2bmMiWl69/ZgZNJ7SoYogyrmVCqvT+hdqVHRP97DwsmILxddBbc35iF5UrbGfnfcjfT8fE4F0scrRgYM6tCkNI5GG/evCKT1WfQA68CAwEAATANBgkqhkiG9w0BAQsFAAOCAQEAkK4tNWV3XnO2KBOUluCQousS6N4+v1Gdyb2e9lvdgmzOfq9KrJi/kU+eQ02MAawlPxfQtCG+nYLLfR0B/tEy2MVQEUti8QI6G1WhBt7il4uHjfGEjUm2hoipQZnlXoxov+WJDK06iJkBqda4cWDphrVRu5dztmAz7Mv6eIlvXPtb/96eKRylEOpgp7n7l4W3PqG7tWMpakXJQXGM7a3XgAfBJY++DNv+cjZpDyVgUARNLEdlX5kbGyIT8Q+Gt5owZLZKyxu5j+mWSfM7PNjMNqNhU4OFAoaUnEge8NfDOzyGGhMSJKpGoz33VzkazstGRxiATfZ5BTV2nhYjipDDJw=="],"x5t":"myYP7GH8faJ7TPNbJum64KgEuHE","x5t#S256":"YDuQ5fw8d5lJku3zrTdjF6YWpfss3sQZY7mF6CD003Q"},{"kid":"j1vsiwNoqP5Hae2wMBbbcLUVVB78bi761EiDOz99PCw","kty":"RSA","alg":"RSA-OAEP","use":"enc","n":"z7DYBgHMQ16PMdpl26rswEciPnUrtJT82nJc4_NiGmPs3e0_ZxzKqeJU1tYmhITZcZH0N9VQxGir2c3Ewh7lFktRl85xbJRoSijELSkH1t4CltHcrXfTLtc-avC1ji7ZFQiKtYZeQab0jllOjM1sM96B1ajHqdvkE-j-Mw4Iestsc9S4hlKuAxMA-PK43pFVwRFDyzcPq-EFPEgbE-PPO9dAPizCh7Ka3rvlNh6o5QBKD0n0hSFPp07GGCAqtiym_8RPYrPCvAPkV2_gfMVsEhk0ODfbT1XPr1EOqW3o-Z4VINY0qA95GDSy61BhbKAGRCqqBBTGDDZvaMDsQtEDHw","e":"AQAB","x5c":["MIICuzCCAaMCBgGT2gNsQTANBgkqhkiG9w0BAQsFADAhMR8wHQYDVQQDDBZyZWNhcmdhcGF5X3dhbGxldF90ZXN0MB4XDTI0MTIxODEzNDI1N1oXDTM0MTIxODEzNDQzN1owITEfMB0GA1UEAwwWcmVjYXJnYXBheV93YWxsZXRfdGVzdDCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAM+w2AYBzENejzHaZduq7MBHIj51K7SU/NpyXOPzYhpj7N3tP2ccyqniVNbWJoSE2XGR9DfVUMRoq9nNxMIe5RZLUZfOcWyUaEooxC0pB9beApbR3K130y7XPmrwtY4u2RUIirWGXkGm9I5ZTozNbDPegdWox6nb5BPo/jMOCHrLbHPUuIZSrgMTAPjyuN6RVcERQ8s3D6vhBTxIGxPjzzvXQD4swoeymt675TYeqOUASg9J9IUhT6dOxhggKrYspv/ET2KzwrwD5Fdv4HzFbBIZNDg3209Vz69RDqlt6PmeFSDWNKgPeRg0sutQYWygBkQqqgQUxgw2b2jA7ELRAx8CAwEAATANBgkqhkiG9w0BAQsFAAOCAQEAR7m6bIXdt87Vpbgv316xPtTFB1EgOhCyjfAgiyeDldxcnALnVrqlc290g5jQ0GSZ8pGNR9Fvqn/rec+WraBKmj2rmKyc5gwce631poi6VsvUnH7AXdNqZ4A4ezjZ2U73UbWx7tQQIO9SX31d5T+rj5GKoTjq9EAPk5un0exBPeW/s7ptEWwIQUWffgCpwemOFKaQ/rwWHN47xgW9K2aG0Zck+wVSJO6AiYp7JzEel/BqoEncI73vMNl2y8JVtbQrqMof/P185mS8eowAoTaa89cbJ0AvYKX7pozTgsPH+tWpY0weVH8Tow/P7xrq5f2oCLGKOrH4/2qIdpRSoNg/NA=="],"x5t":"hoUj0QNhhtkSuDaaYPe5R6YL0ZE","x5t#S256":"HwrS46Qgrrr1DNwZLeEcs9zz2-7Vb-g5EP_MuCFl54M"}]}
+2024-12-18T10:49:17.444-03:00  INFO 1 --- [main] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port 8085 (http)
+2024-12-18T10:49:17.573-03:00  INFO 1 --- [main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 1000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = earliest
+	bootstrap.servers = [kafka:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-worker-wallet-consumer-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	enable.metrics.push = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = worker-wallet-consumer
+	group.instance.id = null
+	group.protocol = classic
+	group.remote.assignor = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class io.confluent.kafka.serializers.KafkaAvroDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metadata.recovery.strategy = none
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class io.confluent.kafka.serializers.KafkaAvroDeserializer
+
+2024-12-18T10:49:17.708-03:00  INFO 1 --- [main] o.a.k.c.t.i.KafkaMetricsCollector        : initializing Kafka metrics collector
+2024-12-18T10:49:17.886-03:00  INFO 1 --- [main] i.c.k.s.KafkaAvroDeserializerConfig      : KafkaAvroDeserializerConfig values: 
+	auto.register.schemas = true
+	avro.reflection.allow.null = false
+	avro.use.logical.type.converters = false
+	basic.auth.credentials.source = URL
+	basic.auth.user.info = [hidden]
+	bearer.auth.cache.expiry.buffer.seconds = 300
+	bearer.auth.client.id = null
+	bearer.auth.client.secret = null
+	bearer.auth.credentials.source = STATIC_TOKEN
+	bearer.auth.custom.provider.class = null
+	bearer.auth.identity.pool.id = null
+	bearer.auth.issuer.endpoint.url = null
+	bearer.auth.logical.cluster = null
+	bearer.auth.scope = null
+	bearer.auth.scope.claim.name = scope
+	bearer.auth.sub.claim.name = sub
+	bearer.auth.token = [hidden]
+	context.name.strategy = class io.confluent.kafka.serializers.context.NullContextNameStrategy
+	http.connect.timeout.ms = 60000
+	http.read.timeout.ms = 60000
+	id.compatibility.strict = true
+	key.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+	latest.cache.size = 1000
+	latest.cache.ttl.sec = -1
+	latest.compatibility.strict = true
+	max.schemas.per.subject = 1000
+	normalize.schemas = false
+	propagate.schema.tags = false
+	proxy.host = 
+	proxy.port = -1
+	rule.actions = []
+	rule.executors = []
+	rule.service.loader.enable = true
+	schema.format = null
+	schema.reflection = false
+	schema.registry.basic.auth.user.info = [hidden]
+	schema.registry.ssl.cipher.suites = null
+	schema.registry.ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	schema.registry.ssl.endpoint.identification.algorithm = https
+	schema.registry.ssl.engine.factory.class = null
+	schema.registry.ssl.key.password = null
+	schema.registry.ssl.keymanager.algorithm = SunX509
+	schema.registry.ssl.keystore.certificate.chain = null
+	schema.registry.ssl.keystore.key = null
+	schema.registry.ssl.keystore.location = null
+	schema.registry.ssl.keystore.password = null
+	schema.registry.ssl.keystore.type = JKS
+	schema.registry.ssl.protocol = TLSv1.3
+	schema.registry.ssl.provider = null
+	schema.registry.ssl.secure.random.implementation = null
+	schema.registry.ssl.trustmanager.algorithm = PKIX
+	schema.registry.ssl.truststore.certificates = null
+	schema.registry.ssl.truststore.location = null
+	schema.registry.ssl.truststore.password = null
+	schema.registry.ssl.truststore.type = JKS
+	schema.registry.url = [http://schema-registry:8081]
+	specific.avro.key.type = null
+	specific.avro.reader = true
+	specific.avro.value.type = null
+	use.latest.version = false
+	use.latest.with.metadata = null
+	use.schema.id = -1
+	value.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+
+2024-12-18T10:49:17.888-03:00  INFO 1 --- [main] i.c.k.s.KafkaAvroDeserializerConfig      : KafkaAvroDeserializerConfig values: 
+	auto.register.schemas = true
+	avro.reflection.allow.null = false
+	avro.use.logical.type.converters = false
+	basic.auth.credentials.source = URL
+	basic.auth.user.info = [hidden]
+	bearer.auth.cache.expiry.buffer.seconds = 300
+	bearer.auth.client.id = null
+	bearer.auth.client.secret = null
+	bearer.auth.credentials.source = STATIC_TOKEN
+	bearer.auth.custom.provider.class = null
+	bearer.auth.identity.pool.id = null
+	bearer.auth.issuer.endpoint.url = null
+	bearer.auth.logical.cluster = null
+	bearer.auth.scope = null
+	bearer.auth.scope.claim.name = scope
+	bearer.auth.sub.claim.name = sub
+	bearer.auth.token = [hidden]
+	context.name.strategy = class io.confluent.kafka.serializers.context.NullContextNameStrategy
+	http.connect.timeout.ms = 60000
+	http.read.timeout.ms = 60000
+	id.compatibility.strict = true
+	key.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+	latest.cache.size = 1000
+	latest.cache.ttl.sec = -1
+	latest.compatibility.strict = true
+	max.schemas.per.subject = 1000
+	normalize.schemas = false
+	propagate.schema.tags = false
+	proxy.host = 
+	proxy.port = -1
+	rule.actions = []
+	rule.executors = []
+	rule.service.loader.enable = true
+	schema.format = null
+	schema.reflection = false
+	schema.registry.basic.auth.user.info = [hidden]
+	schema.registry.ssl.cipher.suites = null
+	schema.registry.ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	schema.registry.ssl.endpoint.identification.algorithm = https
+	schema.registry.ssl.engine.factory.class = null
+	schema.registry.ssl.key.password = null
+	schema.registry.ssl.keymanager.algorithm = SunX509
+	schema.registry.ssl.keystore.certificate.chain = null
+	schema.registry.ssl.keystore.key = null
+	schema.registry.ssl.keystore.location = null
+	schema.registry.ssl.keystore.password = null
+	schema.registry.ssl.keystore.type = JKS
+	schema.registry.ssl.protocol = TLSv1.3
+	schema.registry.ssl.provider = null
+	schema.registry.ssl.secure.random.implementation = null
+	schema.registry.ssl.trustmanager.algorithm = PKIX
+	schema.registry.ssl.truststore.certificates = null
+	schema.registry.ssl.truststore.location = null
+	schema.registry.ssl.truststore.password = null
+	schema.registry.ssl.truststore.type = JKS
+	schema.registry.url = [http://schema-registry:8081]
+	specific.avro.key.type = null
+	specific.avro.reader = true
+	specific.avro.value.type = null
+	use.latest.version = false
+	use.latest.with.metadata = null
+	use.schema.id = -1
+	value.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+
+2024-12-18T10:49:18.054-03:00  INFO 1 --- [main] i.c.k.s.KafkaAvroDeserializerConfig      : KafkaAvroDeserializerConfig values: 
+	auto.register.schemas = true
+	avro.reflection.allow.null = false
+	avro.use.logical.type.converters = false
+	basic.auth.credentials.source = URL
+	basic.auth.user.info = [hidden]
+	bearer.auth.cache.expiry.buffer.seconds = 300
+	bearer.auth.client.id = null
+	bearer.auth.client.secret = null
+	bearer.auth.credentials.source = STATIC_TOKEN
+	bearer.auth.custom.provider.class = null
+	bearer.auth.identity.pool.id = null
+	bearer.auth.issuer.endpoint.url = null
+	bearer.auth.logical.cluster = null
+	bearer.auth.scope = null
+	bearer.auth.scope.claim.name = scope
+	bearer.auth.sub.claim.name = sub
+	bearer.auth.token = [hidden]
+	context.name.strategy = class io.confluent.kafka.serializers.context.NullContextNameStrategy
+	http.connect.timeout.ms = 60000
+	http.read.timeout.ms = 60000
+	id.compatibility.strict = true
+	key.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+	latest.cache.size = 1000
+	latest.cache.ttl.sec = -1
+	latest.compatibility.strict = true
+	max.schemas.per.subject = 1000
+	normalize.schemas = false
+	propagate.schema.tags = false
+	proxy.host = 
+	proxy.port = -1
+	rule.actions = []
+	rule.executors = []
+	rule.service.loader.enable = true
+	schema.format = null
+	schema.reflection = false
+	schema.registry.basic.auth.user.info = [hidden]
+	schema.registry.ssl.cipher.suites = null
+	schema.registry.ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	schema.registry.ssl.endpoint.identification.algorithm = https
+	schema.registry.ssl.engine.factory.class = null
+	schema.registry.ssl.key.password = null
+	schema.registry.ssl.keymanager.algorithm = SunX509
+	schema.registry.ssl.keystore.certificate.chain = null
+	schema.registry.ssl.keystore.key = null
+	schema.registry.ssl.keystore.location = null
+	schema.registry.ssl.keystore.password = null
+	schema.registry.ssl.keystore.type = JKS
+	schema.registry.ssl.protocol = TLSv1.3
+	schema.registry.ssl.provider = null
+	schema.registry.ssl.secure.random.implementation = null
+	schema.registry.ssl.trustmanager.algorithm = PKIX
+	schema.registry.ssl.truststore.certificates = null
+	schema.registry.ssl.truststore.location = null
+	schema.registry.ssl.truststore.password = null
+	schema.registry.ssl.truststore.type = JKS
+	schema.registry.url = [http://schema-registry:8081]
+	specific.avro.key.type = null
+	specific.avro.reader = true
+	specific.avro.value.type = null
+	use.latest.version = false
+	use.latest.with.metadata = null
+	use.schema.id = -1
+	value.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+
+2024-12-18T10:49:18.057-03:00  INFO 1 --- [main] i.c.k.s.KafkaAvroDeserializerConfig      : KafkaAvroDeserializerConfig values: 
+	auto.register.schemas = true
+	avro.reflection.allow.null = false
+	avro.use.logical.type.converters = false
+	basic.auth.credentials.source = URL
+	basic.auth.user.info = [hidden]
+	bearer.auth.cache.expiry.buffer.seconds = 300
+	bearer.auth.client.id = null
+	bearer.auth.client.secret = null
+	bearer.auth.credentials.source = STATIC_TOKEN
+	bearer.auth.custom.provider.class = null
+	bearer.auth.identity.pool.id = null
+	bearer.auth.issuer.endpoint.url = null
+	bearer.auth.logical.cluster = null
+	bearer.auth.scope = null
+	bearer.auth.scope.claim.name = scope
+	bearer.auth.sub.claim.name = sub
+	bearer.auth.token = [hidden]
+	context.name.strategy = class io.confluent.kafka.serializers.context.NullContextNameStrategy
+	http.connect.timeout.ms = 60000
+	http.read.timeout.ms = 60000
+	id.compatibility.strict = true
+	key.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+	latest.cache.size = 1000
+	latest.cache.ttl.sec = -1
+	latest.compatibility.strict = true
+	max.schemas.per.subject = 1000
+	normalize.schemas = false
+	propagate.schema.tags = false
+	proxy.host = 
+	proxy.port = -1
+	rule.actions = []
+	rule.executors = []
+	rule.service.loader.enable = true
+	schema.format = null
+	schema.reflection = false
+	schema.registry.basic.auth.user.info = [hidden]
+	schema.registry.ssl.cipher.suites = null
+	schema.registry.ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	schema.registry.ssl.endpoint.identification.algorithm = https
+	schema.registry.ssl.engine.factory.class = null
+	schema.registry.ssl.key.password = null
+	schema.registry.ssl.keymanager.algorithm = SunX509
+	schema.registry.ssl.keystore.certificate.chain = null
+	schema.registry.ssl.keystore.key = null
+	schema.registry.ssl.keystore.location = null
+	schema.registry.ssl.keystore.password = null
+	schema.registry.ssl.keystore.type = JKS
+	schema.registry.ssl.protocol = TLSv1.3
+	schema.registry.ssl.provider = null
+	schema.registry.ssl.secure.random.implementation = null
+	schema.registry.ssl.trustmanager.algorithm = PKIX
+	schema.registry.ssl.truststore.certificates = null
+	schema.registry.ssl.truststore.location = null
+	schema.registry.ssl.truststore.password = null
+	schema.registry.ssl.truststore.type = JKS
+	schema.registry.url = [http://schema-registry:8081]
+	specific.avro.key.type = null
+	specific.avro.reader = true
+	specific.avro.value.type = null
+	use.latest.version = false
+	use.latest.with.metadata = null
+	use.schema.id = -1
+	value.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+
+2024-12-18T10:49:21.795-03:00  WARN 1 --- [main] org.apache.kafka.clients.ClientUtils     : Couldn't resolve server kafka:9092 from bootstrap.servers as DNS resolution failed for kafka
+2024-12-18T10:49:21.797-03:00  INFO 1 --- [main] o.apache.kafka.common.metrics.Metrics    : Metrics scheduler closed
+2024-12-18T10:49:21.798-03:00  INFO 1 --- [main] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2024-12-18T10:49:21.799-03:00  INFO 1 --- [main] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.telemetry.internals.ClientTelemetryReporter
+2024-12-18T10:49:21.801-03:00  INFO 1 --- [main] o.apache.kafka.common.metrics.Metrics    : Metrics reporters closed
+2024-12-18T10:49:21.802-03:00  INFO 1 --- [main] o.a.kafka.common.utils.AppInfoParser     : App info kafka.consumer for consumer-worker-wallet-consumer-1 unregistered
+2024-12-18T10:49:21.805-03:00  INFO 1 --- [main] o.s.b.w.embedded.netty.GracefulShutdown  : Commencing graceful shutdown. Waiting for active requests to complete
+2024-12-18T10:49:21.809-03:00  INFO 1 --- [netty-shutdown] o.s.b.w.embedded.netty.GracefulShutdown  : Graceful shutdown complete
+2024-12-18T10:49:23.826-03:00  WARN 1 --- [main] onfigReactiveWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'org.springframework.kafka.config.internalKafkaListenerEndpointRegistry'
+2024-12-18T10:49:23.829-03:00  INFO 1 --- [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-18T10:49:23.835-03:00  INFO 1 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-12-18T10:49:23.840-03:00  INFO 1 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-12-18T10:49:23.848-03:00  INFO 1 --- [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-12-18T10:49:23.865-03:00 ERROR 1 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.context.ApplicationContextException: Failed to start bean 'org.springframework.kafka.config.internalKafkaListenerEndpointRegistry'
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:326) ~[spring-context-6.2.0.jar!/:6.2.0]
+	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:510) ~[spring-context-6.2.0.jar!/:6.2.0]
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75) ~[na:na]
+	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:295) ~[spring-context-6.2.0.jar!/:6.2.0]
+	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:240) ~[spring-context-6.2.0.jar!/:6.2.0]
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:1006) ~[spring-context-6.2.0.jar!/:6.2.0]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:630) ~[spring-context-6.2.0.jar!/:6.2.0]
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.refresh(ReactiveWebServerApplicationContext.java:66) ~[spring-boot-3.4.0.jar!/:3.4.0]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) ~[spring-boot-3.4.0.jar!/:3.4.0]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.4.0.jar!/:3.4.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.4.0.jar!/:3.4.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) ~[spring-boot-3.4.0.jar!/:3.4.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) ~[spring-boot-3.4.0.jar!/:3.4.0]
+	at com.recargapay.code.assessment.WorkerWalletApplication.main(WorkerWalletApplication.java:10) ~[!/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.boot.loader.launch.Launcher.launch(Launcher.java:102) ~[app.jar:na]
+	at org.springframework.boot.loader.launch.Launcher.launch(Launcher.java:64) ~[app.jar:na]
+	at org.springframework.boot.loader.launch.JarLauncher.main(JarLauncher.java:40) ~[app.jar:na]
+Caused by: org.apache.kafka.common.KafkaException: Failed to construct kafka consumer
+	at org.apache.kafka.clients.consumer.internals.LegacyKafkaConsumer.<init>(LegacyKafkaConsumer.java:265) ~[kafka-clients-3.8.1.jar!/:na]
+	at org.apache.kafka.clients.consumer.internals.ConsumerDelegateCreator.create(ConsumerDelegateCreator.java:65) ~[kafka-clients-3.8.1.jar!/:na]
+	at org.apache.kafka.clients.consumer.KafkaConsumer.<init>(KafkaConsumer.java:600) ~[kafka-clients-3.8.1.jar!/:na]
+	at org.apache.kafka.clients.consumer.KafkaConsumer.<init>(KafkaConsumer.java:595) ~[kafka-clients-3.8.1.jar!/:na]
+	at org.springframework.kafka.core.DefaultKafkaConsumerFactory$ExtendedKafkaConsumer.<init>(DefaultKafkaConsumerFactory.java:498) ~[spring-kafka-3.3.0.jar!/:3.3.0]
+	at org.springframework.kafka.core.DefaultKafkaConsumerFactory.createRawConsumer(DefaultKafkaConsumerFactory.java:453) ~[spring-kafka-3.3.0.jar!/:3.3.0]
+	at org.springframework.kafka.core.DefaultKafkaConsumerFactory.createKafkaConsumer(DefaultKafkaConsumerFactory.java:430) ~[spring-kafka-3.3.0.jar!/:3.3.0]
+	at org.springframework.kafka.core.DefaultKafkaConsumerFactory.createConsumerWithAdjustedProperties(DefaultKafkaConsumerFactory.java:407) ~[spring-kafka-3.3.0.jar!/:3.3.0]
+	at org.springframework.kafka.core.DefaultKafkaConsumerFactory.createKafkaConsumer(DefaultKafkaConsumerFactory.java:374) ~[spring-kafka-3.3.0.jar!/:3.3.0]
+	at org.springframework.kafka.core.DefaultKafkaConsumerFactory.createConsumer(DefaultKafkaConsumerFactory.java:335) ~[spring-kafka-3.3.0.jar!/:3.3.0]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.<init>(KafkaMessageListenerContainer.java:874) ~[spring-kafka-3.3.0.jar!/:3.3.0]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer.doStart(KafkaMessageListenerContainer.java:385) ~[spring-kafka-3.3.0.jar!/:3.3.0]
+	at org.springframework.kafka.listener.AbstractMessageListenerContainer.start(AbstractMessageListenerContainer.java:520) ~[spring-kafka-3.3.0.jar!/:3.3.0]
+	at org.springframework.kafka.listener.ConcurrentMessageListenerContainer.doStart(ConcurrentMessageListenerContainer.java:264) ~[spring-kafka-3.3.0.jar!/:3.3.0]
+	at org.springframework.kafka.listener.AbstractMessageListenerContainer.start(AbstractMessageListenerContainer.java:520) ~[spring-kafka-3.3.0.jar!/:3.3.0]
+	at org.springframework.kafka.config.KafkaListenerEndpointRegistry.startIfNecessary(KafkaListenerEndpointRegistry.java:436) ~[spring-kafka-3.3.0.jar!/:3.3.0]
+	at org.springframework.kafka.config.KafkaListenerEndpointRegistry.start(KafkaListenerEndpointRegistry.java:382) ~[spring-kafka-3.3.0.jar!/:3.3.0]
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:323) ~[spring-context-6.2.0.jar!/:6.2.0]
+	... 20 common frames omitted
+Caused by: org.apache.kafka.common.config.ConfigException: No resolvable bootstrap urls given in bootstrap.servers
+	at org.apache.kafka.clients.ClientUtils.parseAndValidateAddresses(ClientUtils.java:103) ~[kafka-clients-3.8.1.jar!/:na]
+	at org.apache.kafka.clients.ClientUtils.parseAndValidateAddresses(ClientUtils.java:62) ~[kafka-clients-3.8.1.jar!/:na]
+	at org.apache.kafka.clients.ClientUtils.parseAndValidateAddresses(ClientUtils.java:58) ~[kafka-clients-3.8.1.jar!/:na]
+	at org.apache.kafka.clients.consumer.internals.LegacyKafkaConsumer.<init>(LegacyKafkaConsumer.java:184) ~[kafka-clients-3.8.1.jar!/:na]
+	... 37 common frames omitted
+

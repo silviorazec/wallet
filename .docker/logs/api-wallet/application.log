@@ -2943,3 +2943,181 @@ Caused by: java.lang.IllegalStateException: For queries with named parameters yo
 2024-12-18T09:58:56.825-03:00  INFO 1 --- [http-nio-8084-exec-5] c.r.c.assessment.config.LoggingFilter    : Resposta: [Status: 200, Headers: [X-Content-Type-Options, X-XSS-Protection, Cache-Control, Pragma, Expires, X-Frame-Options, Content-Type, Transfer-Encoding, Date, Keep-Alive, Connection], Body [{"walletId":"17cad5d9-5f5b-450b-a6f0-a8aafef18caf","amount":-1.00,"relatedWalletId":"47184787-9031-4307-9e32-5c2301251b8a","createdAt":"2024-12-18T09:41:45.458028","balanceAtfer":9999.00},{"walletId":"17cad5d9-5f5b-450b-a6f0-a8aafef18caf","amount":-1.00,"relatedWalletId":"47184787-9031-4307-9e32-5c2301251b8a","createdAt":"2024-12-18T09:52:14.572656","balanceAtfer":9998.00},{"walletId":"17cad5d9-5f5b-450b-a6f0-a8aafef18caf","amount":-1.00,"relatedWalletId":"47184787-9031-4307-9e32-5c2301251b8a","createdAt":"2024-12-18T09:58:01.565609","balanceAtfer":9997.00}]]
 2024-12-18T10:07:01.679-03:00  INFO 1 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
 2024-12-18T10:17:01.735-03:00  INFO 1 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2024-12-18T10:29:33.939-03:00  INFO 1 --- [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2024-12-18T10:29:33.945-03:00  INFO 1 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2024-12-18T10:29:35.985-03:00  INFO 1 --- [SpringApplicationShutdownHook] o.a.k.clients.producer.KafkaProducer     : [Producer clientId=producer-1] Closing the Kafka producer with timeoutMillis = 30000 ms.
+2024-12-18T10:29:35.994-03:00  INFO 1 --- [SpringApplicationShutdownHook] o.apache.kafka.common.metrics.Metrics    : Metrics scheduler closed
+2024-12-18T10:29:35.995-03:00  INFO 1 --- [SpringApplicationShutdownHook] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2024-12-18T10:29:35.995-03:00  INFO 1 --- [SpringApplicationShutdownHook] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.telemetry.internals.ClientTelemetryReporter
+2024-12-18T10:29:35.996-03:00  INFO 1 --- [SpringApplicationShutdownHook] o.apache.kafka.common.metrics.Metrics    : Metrics reporters closed
+2024-12-18T10:29:35.997-03:00  INFO 1 --- [SpringApplicationShutdownHook] o.a.kafka.common.utils.AppInfoParser     : App info kafka.producer for producer-1 unregistered
+2024-12-18T10:29:36.000-03:00  INFO 1 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-18T10:29:36.005-03:00  INFO 1 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-12-18T10:29:36.009-03:00  INFO 1 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-12-18T10:35:13.219-03:00  INFO 1 --- [main] c.r.code.assessment.WalletApplication    : Starting WalletApplication using Java 17-ea with PID 1 (/opt/app.jar started by root in /opt)
+2024-12-18T10:35:13.224-03:00  INFO 1 --- [main] c.r.code.assessment.WalletApplication    : No active profile set, falling back to 1 default profile: "default"
+2024-12-18T10:35:14.313-03:00  INFO 1 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-18T10:35:14.507-03:00  INFO 1 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 177 ms. Found 2 JPA repository interfaces.
+2024-12-18T10:35:15.503-03:00  INFO 1 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8084 (http)
+2024-12-18T10:35:15.529-03:00  INFO 1 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-12-18T10:35:15.530-03:00  INFO 1 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-12-18T10:35:15.590-03:00  INFO 1 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-12-18T10:35:15.592-03:00  INFO 1 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2304 ms
+2024-12-18T10:35:16.469-03:00 DEBUG 1 --- [main] o.s.w.r.f.client.ExchangeFunctions       : [4b7ed03e] HTTP GET http://keycloak:8080/realms/recargapay_wallet_test/protocol/openid-connect/certs
+2024-12-18T10:35:16.789-03:00 DEBUG 1 --- [reactor-http-epoll-2] o.s.w.r.f.client.ExchangeFunctions       : [4b7ed03e] [45cc7dce-1] Response 200 OK
+2024-12-18T10:35:16.850-03:00 DEBUG 1 --- [reactor-http-epoll-2] org.springframework.web.HttpLogging      : [4b7ed03e] [45cc7dce-1] Decoded "{"keys":[{"kid":"BI1z83qHwxRpIS_21_gOHlsSl4qDCtTqReZ3IyPbL1A","kty":"RSA","alg":"RS256","use":"sig", (truncated)..."
+2024-12-18T10:35:17.309-03:00  INFO 1 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-18T10:35:17.425-03:00  INFO 1 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.2.Final
+2024-12-18T10:35:17.480-03:00  INFO 1 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-12-18T10:35:17.812-03:00  INFO 1 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-18T10:35:17.849-03:00  INFO 1 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-12-18T10:35:18.028-03:00  INFO 1 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7cd8831c
+2024-12-18T10:35:18.031-03:00  INFO 1 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-12-18T10:35:18.080-03:00  WARN 1 --- [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-12-18T10:35:18.111-03:00  INFO 1 --- [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2024-12-18T10:35:19.230-03:00  INFO 1 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-18T10:35:19.281-03:00  INFO 1 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-18T10:35:19.803-03:00  INFO 1 --- [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-12-18T10:35:21.246-03:00  WARN 1 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-18T10:35:21.620-03:00 DEBUG 1 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 8 mappings in 'requestMappingHandlerMapping'
+2024-12-18T10:35:21.718-03:00 DEBUG 1 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-12-18T10:35:22.052-03:00 DEBUG 1 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-12-18T10:35:22.171-03:00 DEBUG 1 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-12-18T10:35:22.595-03:00  INFO 1 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8084 (http) with context path '/'
+2024-12-18T10:35:22.614-03:00  INFO 1 --- [main] c.r.code.assessment.WalletApplication    : Started WalletApplication in 10.155 seconds (process running for 10.828)
+2024-12-18T10:35:44.134-03:00  INFO 1 --- [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2024-12-18T10:35:44.137-03:00  INFO 1 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2024-12-18T10:35:46.158-03:00  INFO 1 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-18T10:35:46.187-03:00  INFO 1 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-12-18T10:35:46.190-03:00  INFO 1 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-12-18T10:38:24.686-03:00  INFO 1 --- [main] c.r.code.assessment.WalletApplication    : Starting WalletApplication using Java 17-ea with PID 1 (/opt/app.jar started by root in /opt)
+2024-12-18T10:38:24.693-03:00  INFO 1 --- [main] c.r.code.assessment.WalletApplication    : No active profile set, falling back to 1 default profile: "default"
+2024-12-18T10:38:26.029-03:00  INFO 1 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-18T10:38:26.243-03:00  INFO 1 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 195 ms. Found 2 JPA repository interfaces.
+2024-12-18T10:38:27.615-03:00  INFO 1 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8084 (http)
+2024-12-18T10:38:27.655-03:00  INFO 1 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-12-18T10:38:27.658-03:00  INFO 1 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-12-18T10:38:27.766-03:00  INFO 1 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-12-18T10:38:27.767-03:00  INFO 1 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2994 ms
+2024-12-18T10:38:28.778-03:00 DEBUG 1 --- [main] o.s.w.r.f.client.ExchangeFunctions       : [636985df] HTTP GET http://keycloak:8080/realms/recargapay_wallet_test/protocol/openid-connect/certs
+2024-12-18T10:38:29.120-03:00 DEBUG 1 --- [reactor-http-epoll-2] o.s.w.r.f.client.ExchangeFunctions       : [636985df] [c3081dae-1] Response 200 OK
+2024-12-18T10:38:29.172-03:00 DEBUG 1 --- [reactor-http-epoll-2] org.springframework.web.HttpLogging      : [636985df] [c3081dae-1] Decoded "{"keys":[{"kid":"4_kjCXsXh0mcHuxg_x5E1lWe0_HPcvrj6nwmGlWMWaA","kty":"RSA","alg":"RS256","use":"sig", (truncated)..."
+2024-12-18T10:38:29.661-03:00  INFO 1 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-18T10:38:29.799-03:00  INFO 1 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.2.Final
+2024-12-18T10:38:29.873-03:00  INFO 1 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-12-18T10:38:30.244-03:00  INFO 1 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-18T10:38:30.279-03:00  INFO 1 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-12-18T10:38:30.472-03:00  INFO 1 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@146db8a6
+2024-12-18T10:38:30.475-03:00  INFO 1 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-12-18T10:38:30.525-03:00  WARN 1 --- [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-12-18T10:38:30.557-03:00  INFO 1 --- [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2024-12-18T10:38:31.824-03:00  INFO 1 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-18T10:38:31.875-03:00  INFO 1 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-18T10:38:32.349-03:00  INFO 1 --- [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-12-18T10:38:33.699-03:00  WARN 1 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-18T10:38:34.082-03:00 DEBUG 1 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 8 mappings in 'requestMappingHandlerMapping'
+2024-12-18T10:38:34.203-03:00 DEBUG 1 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-12-18T10:38:34.571-03:00 DEBUG 1 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-12-18T10:38:34.689-03:00 DEBUG 1 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-12-18T10:38:35.120-03:00  INFO 1 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8084 (http) with context path '/'
+2024-12-18T10:38:35.140-03:00  INFO 1 --- [main] c.r.code.assessment.WalletApplication    : Started WalletApplication in 11.166 seconds (process running for 11.798)
+2024-12-18T10:39:20.165-03:00  INFO 1 --- [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2024-12-18T10:39:20.173-03:00  INFO 1 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2024-12-18T10:39:22.201-03:00  INFO 1 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-18T10:39:22.205-03:00  INFO 1 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-12-18T10:39:22.210-03:00  INFO 1 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-12-18T10:44:39.972-03:00  INFO 1 --- [main] c.r.code.assessment.WalletApplication    : Starting WalletApplication using Java 17-ea with PID 1 (/opt/app.jar started by root in /opt)
+2024-12-18T10:44:39.978-03:00  INFO 1 --- [main] c.r.code.assessment.WalletApplication    : No active profile set, falling back to 1 default profile: "default"
+2024-12-18T10:44:41.088-03:00  INFO 1 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-18T10:44:41.258-03:00  INFO 1 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 153 ms. Found 2 JPA repository interfaces.
+2024-12-18T10:44:42.227-03:00  INFO 1 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8084 (http)
+2024-12-18T10:44:42.250-03:00  INFO 1 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-12-18T10:44:42.252-03:00  INFO 1 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-12-18T10:44:42.303-03:00  INFO 1 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-12-18T10:44:42.304-03:00  INFO 1 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2260 ms
+2024-12-18T10:44:43.184-03:00 DEBUG 1 --- [main] o.s.w.r.f.client.ExchangeFunctions       : [1595d2b2] HTTP GET http://keycloak:8080/realms/recargapay_wallet_test/protocol/openid-connect/certs
+2024-12-18T10:44:43.494-03:00 DEBUG 1 --- [reactor-http-epoll-2] o.s.w.r.f.client.ExchangeFunctions       : [1595d2b2] [bd6ae6d0-1] Response 200 OK
+2024-12-18T10:44:43.544-03:00 DEBUG 1 --- [reactor-http-epoll-2] org.springframework.web.HttpLogging      : [1595d2b2] [bd6ae6d0-1] Decoded "{"keys":[{"kid":"okfZrgncDopGSv6RWj4VBgm3dLCyhZO99IYxvvEGE4s","kty":"RSA","alg":"RS256","use":"sig", (truncated)..."
+2024-12-18T10:44:43.924-03:00  INFO 1 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-18T10:44:44.052-03:00  INFO 1 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.2.Final
+2024-12-18T10:44:44.120-03:00  INFO 1 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-12-18T10:44:44.477-03:00  INFO 1 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-18T10:44:44.510-03:00  INFO 1 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-12-18T10:44:44.680-03:00  INFO 1 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@234ce7ff
+2024-12-18T10:44:44.683-03:00  INFO 1 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-12-18T10:44:44.717-03:00  WARN 1 --- [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-12-18T10:44:44.738-03:00  INFO 1 --- [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2024-12-18T10:44:45.798-03:00  INFO 1 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-18T10:44:45.843-03:00  INFO 1 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-18T10:44:46.347-03:00  INFO 1 --- [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-12-18T10:44:47.442-03:00  WARN 1 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-18T10:44:47.778-03:00 DEBUG 1 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 8 mappings in 'requestMappingHandlerMapping'
+2024-12-18T10:44:47.871-03:00 DEBUG 1 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-12-18T10:44:48.203-03:00 DEBUG 1 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-12-18T10:44:48.306-03:00 DEBUG 1 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-12-18T10:44:48.742-03:00  INFO 1 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8084 (http) with context path '/'
+2024-12-18T10:44:48.761-03:00  INFO 1 --- [main] c.r.code.assessment.WalletApplication    : Started WalletApplication in 9.474 seconds (process running for 9.982)
+2024-12-18T10:49:01.624-03:00  INFO 1 --- [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2024-12-18T10:49:01.630-03:00  INFO 1 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2024-12-18T10:49:03.652-03:00  INFO 1 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-18T10:49:03.657-03:00  INFO 1 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-12-18T10:49:03.661-03:00  INFO 1 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-12-18T10:49:06.763-03:00  INFO 1 --- [main] c.r.code.assessment.WalletApplication    : Starting WalletApplication using Java 17-ea with PID 1 (/opt/app.jar started by root in /opt)
+2024-12-18T10:49:06.768-03:00  INFO 1 --- [main] c.r.code.assessment.WalletApplication    : No active profile set, falling back to 1 default profile: "default"
+2024-12-18T10:49:08.247-03:00  INFO 1 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-18T10:49:08.532-03:00  INFO 1 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 257 ms. Found 2 JPA repository interfaces.
+2024-12-18T10:49:09.999-03:00  INFO 1 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8084 (http)
+2024-12-18T10:49:10.039-03:00  INFO 1 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-12-18T10:49:10.041-03:00  INFO 1 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-12-18T10:49:10.114-03:00  INFO 1 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-12-18T10:49:10.116-03:00  INFO 1 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3265 ms
+2024-12-18T10:49:11.184-03:00 DEBUG 1 --- [main] o.s.w.r.f.client.ExchangeFunctions       : [51e7589f] HTTP GET http://keycloak:8080/realms/recargapay_wallet_test/protocol/openid-connect/certs
+2024-12-18T10:49:11.566-03:00 DEBUG 1 --- [reactor-http-epoll-2] o.s.w.r.f.client.ExchangeFunctions       : [51e7589f] [37683771-1] Response 200 OK
+2024-12-18T10:49:11.609-03:00 DEBUG 1 --- [reactor-http-epoll-2] org.springframework.web.HttpLogging      : [51e7589f] [37683771-1] Decoded "{"keys":[{"kid":"okfZrgncDopGSv6RWj4VBgm3dLCyhZO99IYxvvEGE4s","kty":"RSA","alg":"RS256","use":"sig", (truncated)..."
+2024-12-18T10:49:12.018-03:00  INFO 1 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-18T10:49:12.169-03:00  INFO 1 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.2.Final
+2024-12-18T10:49:12.248-03:00  INFO 1 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-12-18T10:49:12.677-03:00  INFO 1 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-18T10:49:12.720-03:00  INFO 1 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-12-18T10:49:13.043-03:00  INFO 1 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4203529f
+2024-12-18T10:49:13.047-03:00  INFO 1 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-12-18T10:49:13.113-03:00  WARN 1 --- [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-12-18T10:49:13.164-03:00  INFO 1 --- [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2024-12-18T10:49:14.646-03:00  INFO 1 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-18T10:49:14.732-03:00  INFO 1 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-18T10:49:15.355-03:00  INFO 1 --- [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-12-18T10:49:16.921-03:00  WARN 1 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-18T10:49:17.398-03:00 DEBUG 1 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 8 mappings in 'requestMappingHandlerMapping'
+2024-12-18T10:49:17.540-03:00 DEBUG 1 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-12-18T10:49:17.893-03:00 DEBUG 1 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-12-18T10:49:17.985-03:00 DEBUG 1 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-12-18T10:49:18.399-03:00  INFO 1 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8084 (http) with context path '/'
+2024-12-18T10:49:18.412-03:00  INFO 1 --- [main] c.r.code.assessment.WalletApplication    : Started WalletApplication in 12.471 seconds (process running for 13.333)

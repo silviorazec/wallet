@@ -166,3 +166,9 @@ Scripts for schema creation and data population:
 
 -   Integrated with Grafana for log management.
 - Add Datasource in Grafana's interface: http://loki:3100
+
+### Uninstall
+
+Execute this comman in root's project
+
+`docker-compose -f ./.docker/docker-compose.yml down --volumes`
