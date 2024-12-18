@@ -3121,3 +3121,8 @@ Caused by: java.lang.IllegalStateException: For queries with named parameters yo
 2024-12-18T10:49:17.985-03:00 DEBUG 1 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
 2024-12-18T10:49:18.399-03:00  INFO 1 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8084 (http) with context path '/'
 2024-12-18T10:49:18.412-03:00  INFO 1 --- [main] c.r.code.assessment.WalletApplication    : Started WalletApplication in 12.471 seconds (process running for 13.333)
+2024-12-18T10:54:45.994-03:00  INFO 1 --- [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2024-12-18T10:54:46.004-03:00  INFO 1 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2024-12-18T10:54:48.035-03:00  INFO 1 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-18T10:54:48.038-03:00  INFO 1 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-12-18T10:54:48.040-03:00  INFO 1 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
