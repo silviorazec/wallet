@@ -1,0 +1,220 @@
+openapi: 3.0.0
+info:
+  title: Wallet Management API
+  version: 1.0.2
+  description: API for managing wallets and transactions in a distributed system.
+
+paths:
+  /v1/transactions/:
+    get:
+      summary: Retrieve all transactions for the authenticated user
+      security:
+        - BearerAuth: []
+      responses:
+        '200':
+          description: List of transactions
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/TransactionDTOFull'
+        '404':
+          $ref: '#/components/responses/NotFoundError'
+        '500':
+          $ref: '#/components/responses/InternalServerError'
+
+  /v1/transactions/transfers:
+    post:
+      summary: Create a transfer transaction
+      security:
+        - BearerAuth: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/TransactionDTO'
+      responses:
+        '202':
+          description: Transfer transaction accepted
+        '500':
+          $ref: '#/components/responses/InternalServerError'
+
+  /v1/transactions/deposits:
+    post:
+      summary: Create a deposit transaction
+      security:
+        - BearerAuth: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/TransactionDTODepositWithdraws'
+      responses:
+        '202':
+          description: Deposit transaction accepted
+        '500':
+          $ref: '#/components/responses/InternalServerError'
+
+  /v1/transactions/withdraws:
+    post:
+      summary: Create a withdrawal transaction
+      security:
+        - BearerAuth: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/TransactionDTODepositWithdraws'
+      responses:
+        '202':
+          description: Withdrawal transaction accepted
+        '500':
+          $ref: '#/components/responses/InternalServerError'
+
+  /v1/wallets/:
+    post:
+      summary: Create a new wallet
+      security:
+        - BearerAuth: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/WalletDTO'
+      responses:
+        '201':
+          description: Wallet created successfully
+        '409':
+          $ref: '#/components/responses/ConflictError'
+        '500':
+          $ref: '#/components/responses/InternalServerError'
+
+  /v1/wallets/balance/:
+    get:
+      summary: Retrieve wallet balance
+      security:
+        - BearerAuth: []
+      parameters:
+        - name: dateHistory
+          in: query
+          description: Specific date for the balance history
+          required: false
+          schema:
+            type: string
+            format: date
+      responses:
+        '200':
+          description: Wallet balance
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/BalanceDTO'
+        '404':
+          $ref: '#/components/responses/NotFoundError'
+        '500':
+          $ref: '#/components/responses/InternalServerError'
+
+components:
+  schemas:
+    TransactionDTODepositWithdraws:
+      type: object
+      properties:
+        amount:
+          type: number
+          format: decimal
+    TransactionDTO:
+      type: object
+      properties:
+        amount:
+          type: number
+          format: decimal
+        relatedWalletId:
+          type: string
+          format: uuid
+    TransactionDTOFull:
+      type: object
+      properties:
+        amount:
+          type: number
+          format: decimal
+        relatedWalletId:
+          type: string
+          format: uuid
+        walletId:
+          type: string
+        type:
+          type: string
+          description: Type of transaction (e.g., TRANSFER, DEPOSIT, WITHDRAW)
+        createdAt:
+          type: string
+          format: date-time
+        currency:
+          type: string
+          description: Wallet currency (e.g., USD, EUR)
+    WalletDTO:
+      type: object
+      properties:
+        userId:
+          type: string
+          
+
+    BalanceDTO:
+      type: object
+      properties:
+        idWallet:
+          type: string
+          format: uuid
+        balance:
+          type: number
+          format: decimal
+        currency:
+          type: string
+        lastUpdated:
+          type: string
+          format: date-time
+
+    ApiError:
+      type: object
+      properties:
+        code:
+          type: integer
+        msg:
+          type: string
+        path:
+          type: string
+        timestamp:
+          type: string
+          format: date-time
+
+  responses:
+    NotFoundError:
+      description: Resource not found
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ApiError'
+
+    ConflictError:
+      description: Conflict with existing data
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ApiError'
+
+    InternalServerError:
+      description: Internal server error
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ApiError'
+
+  securitySchemes:
+    BearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT

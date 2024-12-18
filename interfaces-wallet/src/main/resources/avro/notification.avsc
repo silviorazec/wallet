@@ -1,0 +1,15 @@
+{
+  "type": "record",
+  "name": "Notification",
+  "namespace": "com.recargapay.code.assessment.topics",
+  "fields": [
+    {
+      "name": "message",
+      "type": "string"
+    },
+    {
+      "name": "to",
+      "type": "string"
+    }
+  ]
+}
