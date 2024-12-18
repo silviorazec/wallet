@@ -8,6 +8,9 @@ This project consists of a distributed application developed using **Spring Boot
 The architecture is event-driven, where transactions are processed asynchronously using **Apache Kafka** and Avro serialization to ensure consistency and scalability.
 
 ---
+## Sequence
+
+![enter image description here](diagram.png)
 
 ## Project Structure
 
