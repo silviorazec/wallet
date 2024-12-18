@@ -155,6 +155,8 @@ Scripts for schema creation and data population:
 
 -   URL: `http://localhost:3000`
 -   Application metrics monitoring.
+- user: admin
+- pass: admin
 
 ### Loki
 
