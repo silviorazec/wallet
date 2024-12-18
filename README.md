@@ -146,7 +146,7 @@ Scripts for schema creation and data population:
 
 -   `pedro.costa`: Wallet owner.
 -   `maria.melo`: Wallet owner.
-
+-   pass: teste
 ----------
 
 ## Logs and Monitoring
