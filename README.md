@@ -92,7 +92,8 @@ The swagger file is in the root project: swaager.yml
 ### Transaction
 
 
-`{
+```
+{
   "namespace": "com.recargapay.code.assessment.topics",
   "type": "record",
   "name": "Transaction",
@@ -103,11 +104,13 @@ The swagger file is in the root project: swaager.yml
     { "name": "walletId", "type": ["null", { "type": "string", "logicalType": "uuid" }], "default": null },
     { "name": "typeTransaction", "type": { "type": "string" } }
   ]
-}` 
+}
+```
 
 ### Notification
 
-`{
+```
+{
   "type": "record",
   "name": "Notification",
   "namespace": "com.recargapay.code.assessment.topics",
@@ -115,7 +118,8 @@ The swagger file is in the root project: swaager.yml
     { "name": "message", "type": "string" },
     { "name": "to", "type": "string" }
   ]
-}` 
+}
+```
 
 ----------
 
