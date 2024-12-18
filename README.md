@@ -37,6 +37,7 @@ The architecture is event-driven, where transactions are processed asynchronousl
 ### Build and Run
 
 1. **Environment Configuration**:
+
    Ensure the `.docker/.env` file is filled with the following variables:
    ```bash
    API_IMAGE_NAME=api-wallet
@@ -44,12 +45,12 @@ The architecture is event-driven, where transactions are processed asynchronousl
    WORKER_IMAGE_NAME=worker-wallet
    WORKER_IMAGE_VERSION=latest`` 
 
-2. Hosts Settings
-
-192.168.1.73 keycloak
-192.168.1.73 grafana
-192.168.1.73 loki
-
+3. Hosts Settings
+   ```
+   192.168.1.73 keycloak
+   192.168.1.73 grafana
+   192.168.1.73 loki
+   ```
 192.168.1.73 is the docker ip
 
 4.  **Starting the Project**: Run the following command in the project root:
