@@ -43,17 +43,17 @@ The architecture is event-driven, where transactions are processed asynchronousl
    API_IMAGE_NAME=api-wallet
    API_IMAGE_VERSION=latest
    WORKER_IMAGE_NAME=worker-wallet
-   WORKER_IMAGE_VERSION=latest`` 
+   WORKER_IMAGE_VERSION=latest ``` 
 
 3.  **Hosts Settings**:
    ```
    192.168.1.73 keycloak
    192.168.1.73 grafana
-   192.168.1.73 loki
-   ```
-     192.168.1.73 is the docker ip
+   192.168.1.73 loki```
 
-4.  **Starting the Project**: Run the following command in the project root:
+   192.168.1.73 is the docker ip
+
+3.  **Starting the Project**: Run the following command in the project root:
     
    
     `./build-and-run.sh` 
